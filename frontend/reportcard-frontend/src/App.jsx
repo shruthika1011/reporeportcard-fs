@@ -8,7 +8,7 @@ function App() {
   const [records, setRecords] = useState([]);
   const [editingRecord, setEditingRecord] = useState(null);
 
-  // Fetch all report cards from backend on component mount
+  // Fetch all report cards on mount
   useEffect(() => {
     fetch(config.backendUrl)
       .then((res) => res.json())
@@ -16,7 +16,7 @@ function App() {
       .catch((err) => console.error("Error fetching data:", err));
   }, []);
 
-  // Add a new report card
+  // Add
   const addReport = async (record) => {
     try {
       const res = await fetch(config.backendUrl, {
@@ -25,27 +25,27 @@ function App() {
         body: JSON.stringify(record),
       });
       const data = await res.json();
-      setRecords([...records, data]);
+      setRecords((prev) => [...prev, data]); // ✅ include backend response with id
     } catch (err) {
       console.error("Error adding report:", err);
     }
   };
 
-  // Delete a report card
+  // Delete
   const deleteReport = async (id) => {
     try {
       await fetch(`${config.backendUrl}/${id}`, { method: "DELETE" });
-      setRecords(records.filter((r) => r.id !== id));
+      setRecords((prev) => prev.filter((r) => r.id !== id));
       if (editingRecord && editingRecord.id === id) setEditingRecord(null);
     } catch (err) {
       console.error("Error deleting report:", err);
     }
   };
 
-  // Set record to edit
+  // Edit
   const editReport = (record) => setEditingRecord(record);
 
-  // Update a report card
+  // Update
   const updateReport = async (updatedRecord) => {
     try {
       const res = await fetch(`${config.backendUrl}/${updatedRecord.id}`, {
@@ -54,7 +54,7 @@ function App() {
         body: JSON.stringify(updatedRecord),
       });
       const data = await res.json();
-      setRecords(records.map((r) => (r.id === data.id ? data : r)));
+      setRecords((prev) => prev.map((r) => (r.id === data.id ? data : r))); // ✅ replace correctly
       setEditingRecord(null);
     } catch (err) {
       console.error("Error updating report:", err);

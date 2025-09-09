@@ -3,48 +3,70 @@ package com.reportcard.backend.controller;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import com.reportcard.backend.entity.ReportCard;
 import com.reportcard.backend.service.ReportCardService;
 
 @RestController
-@RequestMapping("/reportcards")
-@CrossOrigin(origins = "http://localhost:5173") // allow React frontend to call backend
+@RequestMapping("/") 
+@CrossOrigin(origins = "http://localhost:5173")
 public class ReportCardController {
 
     @Autowired
     private ReportCardService reportCardService;
 
-    // Create
+    // ✅ Health Check
+    @GetMapping("/ping")
+    public String ping() {
+        return "✅ ReportCard API is running!";
+    }
+
+    // ✅ Create ReportCard
     @PostMapping
-    public ReportCard addReportCard(@RequestBody ReportCard reportCard) {
-        return reportCardService.addReportCard(reportCard);
+    public ResponseEntity<ReportCard> addReportCard(@RequestBody ReportCard reportCard) {
+        ReportCard saved = reportCardService.addReportCard(reportCard);
+        return new ResponseEntity<>(saved, HttpStatus.CREATED);
     }
 
-    // Read all
+    // ✅ Get All ReportCards
     @GetMapping
-    public List<ReportCard> getAllReportCards() {
-        return reportCardService.getAllReportCards();
+    public ResponseEntity<List<ReportCard>> getAllReportCards() {
+        return ResponseEntity.ok(reportCardService.getAllReportCards());
     }
 
-    // Read by id
+    // ✅ Get ReportCard by ID
     @GetMapping("/{id}")
-    public ReportCard getReportCardById(@PathVariable int id) {
-        return reportCardService.getReportCardById(id);
+    public ResponseEntity<?> getReportCardById(@PathVariable int id) {
+        ReportCard reportCard = reportCardService.getReportCardById(id);
+        if (reportCard != null) {
+            return ResponseEntity.ok(reportCard);
+        }
+        return new ResponseEntity<>("❌ ReportCard with ID " + id + " not found.", HttpStatus.NOT_FOUND);
     }
 
-    // Update
+    // ✅ Update ReportCard
     @PutMapping("/{id}")
-    public ReportCard updateReportCard(@PathVariable int id, @RequestBody ReportCard reportCard) {
-        reportCard.setId(id); // make sure correct id is used
-        return reportCardService.updateReportCard(reportCard);
+    public ResponseEntity<?> updateReportCard(@PathVariable int id, @RequestBody ReportCard reportCard) {
+        ReportCard existing = reportCardService.getReportCardById(id);
+        if (existing != null) {
+            reportCard.setId(id);
+            ReportCard updated = reportCardService.updateReportCard(reportCard);
+            return ResponseEntity.ok(updated);
+        }
+        return new ResponseEntity<>("❌ Cannot update. ReportCard with ID " + id + " not found.", HttpStatus.NOT_FOUND);
     }
 
-    // Delete
+    // ✅ Delete ReportCard
     @DeleteMapping("/{id}")
-    public String deleteReportCard(@PathVariable int id) {
-        reportCardService.deleteReportCardById(id);
-        return "ReportCard with ID " + id + " deleted successfully.";
+    public ResponseEntity<String> deleteReportCard(@PathVariable int id) {
+        ReportCard existing = reportCardService.getReportCardById(id);
+        if (existing != null) {
+            reportCardService.deleteReportCardById(id);
+            return ResponseEntity.ok("✅ ReportCard with ID " + id + " deleted successfully.");
+        }
+        return new ResponseEntity<>("❌ Cannot delete. ReportCard with ID " + id + " not found.", HttpStatus.NOT_FOUND);
     }
 }

@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 
 function ReportCardForm({ onAdd, onUpdate, editingRecord }) {
-  const [studentId, setStudentId] = useState(""); // NEW
+  const [studentId, setStudentId] = useState("");
   const [name, setName] = useState("");
   const [subject, setSubject] = useState("");
   const [marks, setMarks] = useState("");
@@ -9,7 +9,7 @@ function ReportCardForm({ onAdd, onUpdate, editingRecord }) {
   // Pre-fill form when editing
   useEffect(() => {
     if (editingRecord) {
-      setStudentId(editingRecord.studentId); // NEW
+      setStudentId(editingRecord.studentId);
       setName(editingRecord.name);
       setSubject(editingRecord.subject);
       setMarks(editingRecord.marks);
@@ -43,10 +43,11 @@ function ReportCardForm({ onAdd, onUpdate, editingRecord }) {
   return (
     <form onSubmit={handleSubmit}>
       <input
-        type="text"
+        type="number"
         placeholder="Student ID"
         value={studentId}
         onChange={(e) => setStudentId(e.target.value)}
+        min="1"
       />
       <input
         type="text"
