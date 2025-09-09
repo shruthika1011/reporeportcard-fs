@@ -1,86 +1,120 @@
-/* General Styles */
-body {
-  font-family: Arial, sans-serif;
-  background: #f4f7fa;
+/* ===== Global Styles ===== */
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-h1 {
-  text-align: center;
-  color: #2c3e50;
-  margin: 30px 0 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
+body {
+  background: #f4f7fa;
+  color: #333;
+  line-height: 1.6;
 }
 
+/* Container */
 .container {
   max-width: 900px;
-  margin: 20px auto;
+  margin: 2rem auto;
+  padding: 2rem;
   background: #fff;
-  padding: 25px;
   border-radius: 16px;
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
 }
 
-/* Form */
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  margin-bottom: 20px;
+/* Headings */
+h1, h2, h3, h4 {
+  margin-bottom: 1rem;
+  font-weight: 600;
+  color: #1e293b;
+  letter-spacing: 0.5px;
 }
 
-input {
+/* Form Inputs */
+input, select, textarea {
   padding: 12px;
   border: 1px solid #ddd;
   border-radius: 8px;
   font-size: 14px;
   outline: none;
+  margin-bottom: 10px;
   transition: border 0.3s;
 }
-
-input:focus {
-  border-color: #3498db;
-  box-shadow: 0 0 4px rgba(52, 152, 219, 0.2);
+input:focus, select:focus, textarea:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 4px rgba(59,130,246,0.15);
 }
 
-button[type="submit"] {
-  padding: 12px;
+/* Buttons */
+button {
+  padding: 0.5rem 1.2rem;
+  margin: 0.2rem;
   border: none;
   border-radius: 8px;
-  background: #3498db;
-  color: #fff;
-  font-weight: bold;
-  font-size: 15px;
   cursor: pointer;
-  transition: background 0.3s;
+  transition: background 0.2s, transform 0.2s;
+  font-weight: 500;
+  font-size: 15px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.04);
 }
 
-button[type="submit"]:hover {
-  background: #2980b9;
+button:hover {
+  transform: scale(1.05);
+  opacity: 0.92;
 }
 
-/* Clean, Borderless Table */
-.report-table {
+.btn-blue {
+  background: #3b82f6;
+  color: #fff;
+}
+
+.btn-green, .edit-btn {
+  background: #10b981;
+  color: #fff;
+}
+
+.btn-red, .delete-btn {
+  background: #ef4444;
+  color: #fff;
+}
+
+.btn-gray {
+  background: #6b7280;
+  color: #fff;
+}
+
+/* Remove borders for action buttons */
+.edit-btn, .delete-btn {
+  border: none;
+  box-shadow: none;
+}
+
+/* Action buttons container */
+.action-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+/* Tables - Clean, Borderless */
+.report-table, table {
   width: 100%;
   border-collapse: collapse;
-  margin-top: 15px;
+  margin-top: 1rem;
   background: #fff;
-  box-shadow: 0 2px 8px rgba(44, 62, 80, 0.06);
+  box-shadow: 0 2px 8px rgba(44,62,80,0.06);
   border-radius: 12px;
   overflow: hidden;
 }
 
-.report-table th,
-.report-table td {
+.report-table th, .report-table td,
+table th, table td {
   padding: 16px 18px;
   text-align: center;
   border: none;
 }
 
-.report-table th {
+.report-table th, table th {
   background: #f6f8fa;
   font-weight: 600;
   color: #34495e;
@@ -88,51 +122,28 @@ button[type="submit"]:hover {
   font-size: 15px;
 }
 
-.report-table tbody tr {
+.report-table tbody tr, table tbody tr {
   background: #fff;
   transition: background 0.2s;
 }
 
-.report-table tbody tr:hover {
+.report-table tbody tr:hover, table tbody tr:hover {
   background: #f0f4fa;
 }
 
-.report-table td {
+.report-table td, table td {
   color: #2c3e50;
   font-size: 14px;
 }
 
-/* Action buttons */
-.action-buttons {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-}
-
-.edit-btn,
-.delete-btn {
-  padding: 6px 14px;
-  border-radius: 8px;
-  font-size: 13px;
-  font-weight: bold;
-  color: #fff;
-  border: none;
-  cursor: pointer;
-  transition: background 0.3s;
-}
-
-.edit-btn {
-  background: #27ae60;
-}
-
-.edit-btn:hover {
-  background: #1e8449;
-}
-
-.delete-btn {
-  background: #e74c3c;
-}
-
-.delete-btn:hover {
-  background: #c0392b;
+/* Responsive Table */
+@media (max-width: 700px) {
+  .container {
+    padding: 1rem;
+  }
+  .report-table th, .report-table td,
+  table th, table td {
+    padding: 10px 6px;
+    font-size: 13px;
+  }
 }

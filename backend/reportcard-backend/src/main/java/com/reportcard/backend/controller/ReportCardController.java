@@ -11,7 +11,7 @@ import com.reportcard.backend.entity.ReportCard;
 import com.reportcard.backend.service.ReportCardService;
 
 @RestController
-@RequestMapping("/") 
+@RequestMapping("/reports") 
 @CrossOrigin(origins = "http://localhost:5173")
 public class ReportCardController {
 
