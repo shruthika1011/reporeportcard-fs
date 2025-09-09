@@ -55,11 +55,21 @@ function ReportCardManager() {
   const deleteReport = async (id) => {
     await fetch(`${config.backendUrl}/${id}`, { method: "DELETE" });
     setRecords((prev) => prev.filter((r) => r.id !== id));
+    // After deletion, editingRecord should reset if it was deleted
+    if (editingRecord && editingRecord.id === id) {
+      setEditingRecord(null);
+      setFormData({ studentId: "", name: "", subject: "", marks: "" });
+    }
   };
 
   const editReport = (record) => {
     setEditingRecord(record);
-    setFormData(record);
+    setFormData({
+      studentId: record.studentId,
+      name: record.name,
+      subject: record.subject,
+      marks: record.marks
+    });
   };
 
   return (
@@ -83,9 +93,10 @@ function ReportCardManager() {
           </tr>
         </thead>
         <tbody>
-          {records.map((r) => (
+          {records.map((r, index) => (
             <tr key={r.id}>
-              <td>{r.id}</td>
+              {/* Dynamic serial number */}
+              <td>{index + 1}</td>
               <td>{r.studentId}</td>
               <td>{r.name}</td>
               <td>{r.subject}</td>
