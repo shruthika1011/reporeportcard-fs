@@ -1,5 +1,0 @@
-package com.reportcard.backend.service;
-
-public interface ReportCardService {
-
-}

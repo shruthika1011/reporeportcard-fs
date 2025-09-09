@@ -1,9 +1,0 @@
-package com.reportcard.backend.service;
-
-public class ReportCardServiceImpl {
-
-	public ReportCardServiceImpl() {
-		// TODO Auto-generated constructor stub
-	}
-
-}

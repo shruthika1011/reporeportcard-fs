@@ -1,7 +1,0 @@
-INDEX VERSION 1.4+D:\reportcard-system\backend\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
-3656106384.index
-3669953915.index
-3174390980.index
-1177010489.index
-2275256573.index
-3019531829.index
