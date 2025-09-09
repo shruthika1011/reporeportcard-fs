@@ -1,0 +1,66 @@
+package com.reportcard.backend.entity;
+
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+
+@Entity
+@Table(name = "report_card")
+public class ReportCard {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    
+    private Long id;
+    @Column(name = "student_id")
+    private Integer id;
+
+    @Column(name = "student_id", nullable = false, length = 50) // NEW
+    private String studentId;
+
+    @Column(name = "student_name", nullable = false, length = 100)
+    private String name;
+
+    @Column(name = "subject", nullable = false, length = 100)
+    private String subject;
+
+    @Column(name = "marks", nullable = false)
+    private Integer marks;
+
+    // No-arg constructor
+    public ReportCard() {}
+
+    // All-args constructor
+    public ReportCard(Integer id, String studentId, String name, String subject, Integer marks) {
+        this.id = id;
+        this.studentId = studentId; // NEW
+        this.name = name;
+        this.subject = subject;
+        this.marks = marks;
+    }
+
+    // Getters & setters
+    public Integer getId() { return id; }
+    public void setId(Integer id) { this.id = id; }
+
+    public String getStudentId() { return studentId; } // NEW
+    public void setStudentId(String studentId) { this.studentId = studentId; } // NEW
+
+    public String getName() { return name; }
+    public void setName(String name) { this.name = name; }
+
+    public String getSubject() { return subject; }
+    public void setSubject(String subject) { this.subject = subject; }
+
+    public Integer getMarks() { return marks; }
+    public void setMarks(Integer marks) { this.marks = marks; }
+
+    @Override
+    public String toString() {
+        return "ReportCard [id=" + id + ", studentId=" + studentId + ", name=" + name +
+                ", subject=" + subject + ", marks=" + marks + "]";
+    }
+}

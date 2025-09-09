@@ -1,0 +1,9 @@
+package com.reportcard.backend.repository;
+
+public class ReportCardRepository {
+
+	public ReportCardRepository() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

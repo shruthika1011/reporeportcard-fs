@@ -1,0 +1,9 @@
+package com.reportcard.backend.controller;
+
+public class ReportCardController {
+
+	public ReportCardController() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

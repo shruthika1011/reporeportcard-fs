@@ -1,0 +1,9 @@
+package com.reportcard.backend.entity;
+
+public class ReportCard {
+
+	public ReportCard() {
+		// TODO Auto-generated constructor stub
+	}
+
+}
