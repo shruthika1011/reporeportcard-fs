@@ -1,4 +1,4 @@
-!SESSION 2025-09-09 18:34:21.952 -----------------------------------------------
+!SESSION 2025-09-09 13:00:31.344 -----------------------------------------------
 eclipse.buildId=4.36.0.20250605-1300
 java.version=21.0.6
 java.vendor=Oracle Corporation
@@ -6,1893 +6,128 @@ BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
 Framework arguments:  -product org.eclipse.epp.package.jee.product
 Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
 
-!ENTRY ch.qos.logback.classic 1 0 2025-09-09 18:34:28.611
+!ENTRY ch.qos.logback.classic 1 0 2025-09-09 13:00:40.661
 !MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
 
-!ENTRY org.eclipse.lemminx.uber-jar 4 0 2025-09-09 18:34:29.352
+!ENTRY org.eclipse.lemminx.uber-jar 4 0 2025-09-09 13:00:41.439
 !MESSAGE bundle org.eclipse.lemminx.uber-jar:0.31.0 (1081) Component descriptor entry 'OSGI-INF/*.xml' not found
 
-!ENTRY ch.qos.logback.classic 1 0 2025-09-09 18:35:00.015
+!ENTRY ch.qos.logback.classic 1 0 2025-09-09 13:01:04.207
 !MESSAGE Logback config file: D:\reportcard-system\backend\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.7.100.20250418-1315.xml
 
-!ENTRY org.eclipse.ui 2 0 2025-09-09 18:35:00.764
+!ENTRY org.eclipse.ui 2 0 2025-09-09 13:01:04.905
 !MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
-!SUBENTRY 1 org.eclipse.ui 2 0 2025-09-09 18:35:00.764
+!SUBENTRY 1 org.eclipse.ui 2 0 2025-09-09 13:01:04.905
 !MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
 
-!ENTRY org.eclipse.ui 2 0 2025-09-09 18:35:01.355
+!ENTRY org.eclipse.ui 2 0 2025-09-09 13:01:05.472
 !MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
-!SUBENTRY 1 org.eclipse.ui 2 0 2025-09-09 18:35:01.355
+!SUBENTRY 1 org.eclipse.ui 2 0 2025-09-09 13:01:05.472
 !MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
 
-!ENTRY org.eclipse.egit.ui 2 0 2025-09-09 18:35:14.061
+!ENTRY org.eclipse.egit.ui 2 0 2025-09-09 13:01:20.409
 !MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
 user global configuration and to define the default location to store repositories: 'C:\Users\laptop'. If this is
 not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
 EGit might behave differently since they see different configuration options.
 This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
 
-!ENTRY org.eclipse.jface 2 0 2025-09-09 18:57:31.528
-!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
-!SUBENTRY 1 org.eclipse.jface 2 0 2025-09-09 18:57:31.528
-!MESSAGE A conflict occurred for CTRL+SHIFT+T:
-Binding(CTRL+SHIFT+T,
-	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
-		Open a type in a Java editor,
-		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
-		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
-		,,true),null),
-	org.eclipse.ui.defaultAcceleratorConfiguration,
-	org.eclipse.ui.contexts.window,,,system)
-Binding(CTRL+SHIFT+T,
-	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolInWorkspace,Go to Symbol in Workspace,
-		,
-		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
-		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolInWorkspace"),
-		,,true),null),
-	org.eclipse.ui.defaultAcceleratorConfiguration,
-	org.eclipse.ui.contexts.window,,,system)
+!ENTRY org.eclipse.wst.jsdt.core 4 4 2025-09-09 13:06:32.629
+!MESSAGE Class com.google.javascript.jscomp.parsing.parser.Parser$Config$Mode does not have member field 'com.google.javascript.jscomp.parsing.parser.Parser$Config$Mode ES6'
+!STACK 0
+java.lang.NoSuchFieldError: Class com.google.javascript.jscomp.parsing.parser.Parser$Config$Mode does not have member field 'com.google.javascript.jscomp.parsing.parser.Parser$Config$Mode ES6'
+	at org.eclipse.wst.jsdt.internal.compiler.closure.ClosureCompiler.parse(ClosureCompiler.java:112)
+	at org.eclipse.wst.jsdt.core.dom.ASTParser.internalCreateAST(ASTParser.java:911)
+	at org.eclipse.wst.jsdt.core.dom.ASTParser.createAST(ASTParser.java:675)
+	at org.eclipse.wst.jsdt.internal.core.search.indexing.SourceIndexer.indexDocument(SourceIndexer.java:93)
+	at org.eclipse.wst.jsdt.internal.core.search.JavaSearchParticipant.indexDocument(JavaSearchParticipant.java:79)
+	at org.eclipse.wst.jsdt.internal.core.search.indexing.IndexManager.indexDocument(IndexManager.java:325)
+	at org.eclipse.wst.jsdt.internal.core.search.indexing.AddLibraryFileToIndex.indexFile(AddLibraryFileToIndex.java:251)
+	at org.eclipse.wst.jsdt.internal.core.search.indexing.AddLibraryFileToIndex.execute(AddLibraryFileToIndex.java:169)
+	at org.eclipse.wst.jsdt.internal.core.search.processing.JobManager.run(JobManager.java:393)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
 
-!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2025-09-09 19:07:41.031
+!ENTRY org.eclipse.wst.jsdt.core 4 4 2025-09-09 13:06:32.780
+!MESSAGE Class com.google.javascript.jscomp.parsing.parser.Parser$Config$Mode does not have member field 'com.google.javascript.jscomp.parsing.parser.Parser$Config$Mode ES6'
+!STACK 0
+java.lang.NoSuchFieldError: Class com.google.javascript.jscomp.parsing.parser.Parser$Config$Mode does not have member field 'com.google.javascript.jscomp.parsing.parser.Parser$Config$Mode ES6'
+	at org.eclipse.wst.jsdt.internal.compiler.closure.ClosureCompiler.parse(ClosureCompiler.java:112)
+	at org.eclipse.wst.jsdt.core.dom.ASTParser.internalCreateAST(ASTParser.java:911)
+	at org.eclipse.wst.jsdt.core.dom.ASTParser.createAST(ASTParser.java:675)
+	at org.eclipse.wst.jsdt.internal.core.search.indexing.SourceIndexer.indexDocument(SourceIndexer.java:93)
+	at org.eclipse.wst.jsdt.internal.core.search.JavaSearchParticipant.indexDocument(JavaSearchParticipant.java:79)
+	at org.eclipse.wst.jsdt.internal.core.search.indexing.IndexManager.indexDocument(IndexManager.java:325)
+	at org.eclipse.wst.jsdt.internal.core.search.indexing.AddLibraryFileToIndex.indexFile(AddLibraryFileToIndex.java:251)
+	at org.eclipse.wst.jsdt.internal.core.search.indexing.AddLibraryFileToIndex.execute(AddLibraryFileToIndex.java:169)
+	at org.eclipse.wst.jsdt.internal.core.search.processing.JobManager.run(JobManager.java:393)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+!ENTRY org.eclipse.wst.jsdt.core 4 4 2025-09-09 13:06:32.896
+!MESSAGE Class com.google.javascript.jscomp.parsing.parser.Parser$Config$Mode does not have member field 'com.google.javascript.jscomp.parsing.parser.Parser$Config$Mode ES6'
+!STACK 0
+java.lang.NoSuchFieldError: Class com.google.javascript.jscomp.parsing.parser.Parser$Config$Mode does not have member field 'com.google.javascript.jscomp.parsing.parser.Parser$Config$Mode ES6'
+	at org.eclipse.wst.jsdt.internal.compiler.closure.ClosureCompiler.parse(ClosureCompiler.java:112)
+	at org.eclipse.wst.jsdt.core.dom.ASTParser.internalCreateAST(ASTParser.java:911)
+	at org.eclipse.wst.jsdt.core.dom.ASTParser.createAST(ASTParser.java:675)
+	at org.eclipse.wst.jsdt.internal.core.search.indexing.SourceIndexer.indexDocument(SourceIndexer.java:93)
+	at org.eclipse.wst.jsdt.internal.core.search.JavaSearchParticipant.indexDocument(JavaSearchParticipant.java:79)
+	at org.eclipse.wst.jsdt.internal.core.search.indexing.IndexManager.indexDocument(IndexManager.java:325)
+	at org.eclipse.wst.jsdt.internal.core.search.indexing.AddLibraryFileToIndex.indexFile(AddLibraryFileToIndex.java:251)
+	at org.eclipse.wst.jsdt.internal.core.search.indexing.AddLibraryFileToIndex.execute(AddLibraryFileToIndex.java:169)
+	at org.eclipse.wst.jsdt.internal.core.search.processing.JobManager.run(JobManager.java:393)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+!ENTRY org.eclipse.wst.jsdt.core 4 4 2025-09-09 13:06:32.955
+!MESSAGE Class com.google.javascript.jscomp.parsing.parser.Parser$Config$Mode does not have member field 'com.google.javascript.jscomp.parsing.parser.Parser$Config$Mode ES6'
+!STACK 0
+java.lang.NoSuchFieldError: Class com.google.javascript.jscomp.parsing.parser.Parser$Config$Mode does not have member field 'com.google.javascript.jscomp.parsing.parser.Parser$Config$Mode ES6'
+	at org.eclipse.wst.jsdt.internal.compiler.closure.ClosureCompiler.parse(ClosureCompiler.java:112)
+	at org.eclipse.wst.jsdt.core.dom.ASTParser.internalCreateAST(ASTParser.java:911)
+	at org.eclipse.wst.jsdt.core.dom.ASTParser.createAST(ASTParser.java:675)
+	at org.eclipse.wst.jsdt.internal.core.search.indexing.SourceIndexer.indexDocument(SourceIndexer.java:93)
+	at org.eclipse.wst.jsdt.internal.core.search.JavaSearchParticipant.indexDocument(JavaSearchParticipant.java:79)
+	at org.eclipse.wst.jsdt.internal.core.search.indexing.IndexManager.indexDocument(IndexManager.java:325)
+	at org.eclipse.wst.jsdt.internal.core.search.indexing.AddLibraryFileToIndex.indexFile(AddLibraryFileToIndex.java:251)
+	at org.eclipse.wst.jsdt.internal.core.search.indexing.AddLibraryFileToIndex.execute(AddLibraryFileToIndex.java:169)
+	at org.eclipse.wst.jsdt.internal.core.search.processing.JobManager.run(JobManager.java:393)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+!ENTRY org.eclipse.wst.jsdt.core 4 4 2025-09-09 13:06:33.078
+!MESSAGE Class com.google.javascript.jscomp.parsing.parser.Parser$Config$Mode does not have member field 'com.google.javascript.jscomp.parsing.parser.Parser$Config$Mode ES6'
+!STACK 0
+java.lang.NoSuchFieldError: Class com.google.javascript.jscomp.parsing.parser.Parser$Config$Mode does not have member field 'com.google.javascript.jscomp.parsing.parser.Parser$Config$Mode ES6'
+	at org.eclipse.wst.jsdt.internal.compiler.closure.ClosureCompiler.parse(ClosureCompiler.java:112)
+	at org.eclipse.wst.jsdt.core.dom.ASTParser.internalCreateAST(ASTParser.java:911)
+	at org.eclipse.wst.jsdt.core.dom.ASTParser.createAST(ASTParser.java:675)
+	at org.eclipse.wst.jsdt.internal.core.search.indexing.SourceIndexer.indexDocument(SourceIndexer.java:93)
+	at org.eclipse.wst.jsdt.internal.core.search.JavaSearchParticipant.indexDocument(JavaSearchParticipant.java:79)
+	at org.eclipse.wst.jsdt.internal.core.search.indexing.IndexManager.indexDocument(IndexManager.java:325)
+	at org.eclipse.wst.jsdt.internal.core.search.indexing.AddLibraryFileToIndex.indexFile(AddLibraryFileToIndex.java:251)
+	at org.eclipse.wst.jsdt.internal.core.search.indexing.AddLibraryFileToIndex.execute(AddLibraryFileToIndex.java:169)
+	at org.eclipse.wst.jsdt.internal.core.search.processing.JobManager.run(JobManager.java:393)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2025-09-09 13:06:36.256
 !MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/application-client_9.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
 
-!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2025-09-09 19:07:41.033
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2025-09-09 13:06:36.258
 !MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/jobXML_2_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
 
-!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2025-09-09 19:07:41.037
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2025-09-09 13:06:36.260
 !MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/beans_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
 
-!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2025-09-09 19:07:41.038
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2025-09-09 13:06:36.262
 !MESSAGE The given URI https://jakarta.ee/xml/ns/jaxb/bindingschema_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
 
-!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2025-09-09 19:07:41.052
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2025-09-09 13:06:36.281
 !MESSAGE The given URI https://jakarta.ee/xml/ns/validation/validation-configuration-3.0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
 
-!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2025-09-09 19:07:41.058
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2025-09-09 13:06:36.290
 !MESSAGE The given URI http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_1.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
 
-!ENTRY org.eclipse.m2e.logback.appender 4 0 2025-09-09 19:16:00.510
-!MESSAGE Could not read maven project
-!STACK 1
-org.eclipse.core.runtime.CoreException: Could not read maven project
-	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$4(MavenImpl.java:371)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:292)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
-	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readProject(MavenImpl.java:361)
-	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator.lambda$4(AbstractMavenArchiverConfigurator.java:576)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
-	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator.loadParentHierarchy(AbstractMavenArchiverConfigurator.java:568)
-	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator.generateManifest(AbstractMavenArchiverConfigurator.java:365)
-	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator.mavenProjectChanged(AbstractMavenArchiverConfigurator.java:228)
-	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator.mavenProjectChanged(AbstractMavenArchiverConfigurator.java:220)
-	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.mavenProjectChanged(ProjectConfigurationManager.java:885)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.notifyProjectChangeListeners(ProjectRegistryManager.java:892)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.applyMutableProjectRegistry(ProjectRegistryManager.java:1042)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:324)
-	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration0(ProjectConfigurationManager.java:388)
-	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.lambda$3(ProjectConfigurationManager.java:340)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
-	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1053)
-	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration(ProjectConfigurationManager.java:339)
-	at org.eclipse.m2e.core.ui.internal.UpdateMavenProjectJob.runInWorkspace(UpdateMavenProjectJob.java:80)
-	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:43)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-Caused by: org.apache.maven.project.ProjectBuildingException: 1 problem was encountered while building the effective model
-[FATAL] Non-readable POM D:\reportcard-system\backend\reportcard-backend: D:\reportcard-system\backend\reportcard-backend (Access is denied) @ 
- for project  at D:\reportcard-system\backend\reportcard-backend
-	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:180)
-	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:123)
-	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$4(MavenImpl.java:369)
-	... 25 more
-Caused by: org.apache.maven.model.building.ModelBuildingException: 1 problem was encountered while building the effective model
-[FATAL] Non-readable POM D:\reportcard-system\backend\reportcard-backend: D:\reportcard-system\backend\reportcard-backend (Access is denied) @ 
-
-	at org.apache.maven.model.building.DefaultModelProblemCollector.newModelBuildingException(DefaultModelProblemCollector.java:176)
-	at org.apache.maven.model.building.DefaultModelBuilder.readModel(DefaultModelBuilder.java:642)
-	at org.apache.maven.model.building.DefaultModelBuilder.build(DefaultModelBuilder.java:262)
-	at org.apache.maven.model.building.DefaultModelBuilder.build(DefaultModelBuilder.java:248)
-	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:176)
-	... 27 more
-!SUBENTRY 1 org.eclipse.m2e.core 4 0 2025-09-09 19:16:00.511
-!MESSAGE Could not read maven project
-!STACK 0
-org.apache.maven.project.ProjectBuildingException: 1 problem was encountered while building the effective model
-[FATAL] Non-readable POM D:\reportcard-system\backend\reportcard-backend: D:\reportcard-system\backend\reportcard-backend (Access is denied) @ 
- for project  at D:\reportcard-system\backend\reportcard-backend
-	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:180)
-	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:123)
-	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$4(MavenImpl.java:369)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:292)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
-	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readProject(MavenImpl.java:361)
-	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator.lambda$4(AbstractMavenArchiverConfigurator.java:576)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
-	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator.loadParentHierarchy(AbstractMavenArchiverConfigurator.java:568)
-	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator.generateManifest(AbstractMavenArchiverConfigurator.java:365)
-	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator.mavenProjectChanged(AbstractMavenArchiverConfigurator.java:228)
-	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator.mavenProjectChanged(AbstractMavenArchiverConfigurator.java:220)
-	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.mavenProjectChanged(ProjectConfigurationManager.java:885)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.notifyProjectChangeListeners(ProjectRegistryManager.java:892)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.applyMutableProjectRegistry(ProjectRegistryManager.java:1042)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:324)
-	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration0(ProjectConfigurationManager.java:388)
-	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.lambda$3(ProjectConfigurationManager.java:340)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
-	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1053)
-	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration(ProjectConfigurationManager.java:339)
-	at org.eclipse.m2e.core.ui.internal.UpdateMavenProjectJob.runInWorkspace(UpdateMavenProjectJob.java:80)
-	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:43)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-Caused by: org.apache.maven.model.building.ModelBuildingException: 1 problem was encountered while building the effective model
-[FATAL] Non-readable POM D:\reportcard-system\backend\reportcard-backend: D:\reportcard-system\backend\reportcard-backend (Access is denied) @ 
-
-	at org.apache.maven.model.building.DefaultModelProblemCollector.newModelBuildingException(DefaultModelProblemCollector.java:176)
-	at org.apache.maven.model.building.DefaultModelBuilder.readModel(DefaultModelBuilder.java:642)
-	at org.apache.maven.model.building.DefaultModelBuilder.build(DefaultModelBuilder.java:262)
-	at org.apache.maven.model.building.DefaultModelBuilder.build(DefaultModelBuilder.java:248)
-	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:176)
-	... 27 more
-
-!ENTRY org.eclipse.m2e.logback.appender 4 0 2025-09-09 19:17:48.959
-!MESSAGE Could not read maven project
-!STACK 1
-org.eclipse.core.runtime.CoreException: Could not read maven project
-	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$4(MavenImpl.java:371)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:292)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
-	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readProject(MavenImpl.java:361)
-	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator.lambda$4(AbstractMavenArchiverConfigurator.java:576)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
-	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator.loadParentHierarchy(AbstractMavenArchiverConfigurator.java:568)
-	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator.generateManifest(AbstractMavenArchiverConfigurator.java:365)
-	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator.mavenProjectChanged(AbstractMavenArchiverConfigurator.java:228)
-	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator.mavenProjectChanged(AbstractMavenArchiverConfigurator.java:220)
-	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.mavenProjectChanged(ProjectConfigurationManager.java:885)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.notifyProjectChangeListeners(ProjectRegistryManager.java:892)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.applyMutableProjectRegistry(ProjectRegistryManager.java:1042)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:324)
-	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.getProjectFacade(MavenBuilder.java:146)
-	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.lambda$0(MavenBuilder.java:84)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
-	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.execute(MavenBuilder.java:83)
-	at org.eclipse.m2e.core.internal.builder.MavenBuilder.build(MavenBuilder.java:192)
-	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1077)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
-	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
-	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
-	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
-	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
-	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:207)
-	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:300)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-Caused by: org.apache.maven.project.ProjectBuildingException: 1 problem was encountered while building the effective model
-[FATAL] Non-readable POM D:\reportcard-system\backend\reportcard-backend: D:\reportcard-system\backend\reportcard-backend (Access is denied) @ 
- for project  at D:\reportcard-system\backend\reportcard-backend
-	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:180)
-	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:123)
-	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$4(MavenImpl.java:369)
-	... 35 more
-Caused by: org.apache.maven.model.building.ModelBuildingException: 1 problem was encountered while building the effective model
-[FATAL] Non-readable POM D:\reportcard-system\backend\reportcard-backend: D:\reportcard-system\backend\reportcard-backend (Access is denied) @ 
-
-	at org.apache.maven.model.building.DefaultModelProblemCollector.newModelBuildingException(DefaultModelProblemCollector.java:176)
-	at org.apache.maven.model.building.DefaultModelBuilder.readModel(DefaultModelBuilder.java:642)
-	at org.apache.maven.model.building.DefaultModelBuilder.build(DefaultModelBuilder.java:262)
-	at org.apache.maven.model.building.DefaultModelBuilder.build(DefaultModelBuilder.java:248)
-	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:176)
-	... 37 more
-!SUBENTRY 1 org.eclipse.m2e.core 4 0 2025-09-09 19:17:48.960
-!MESSAGE Could not read maven project
-!STACK 0
-org.apache.maven.project.ProjectBuildingException: 1 problem was encountered while building the effective model
-[FATAL] Non-readable POM D:\reportcard-system\backend\reportcard-backend: D:\reportcard-system\backend\reportcard-backend (Access is denied) @ 
- for project  at D:\reportcard-system\backend\reportcard-backend
-	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:180)
-	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:123)
-	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$4(MavenImpl.java:369)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:292)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
-	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readProject(MavenImpl.java:361)
-	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator.lambda$4(AbstractMavenArchiverConfigurator.java:576)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
-	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator.loadParentHierarchy(AbstractMavenArchiverConfigurator.java:568)
-	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator.generateManifest(AbstractMavenArchiverConfigurator.java:365)
-	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator.mavenProjectChanged(AbstractMavenArchiverConfigurator.java:228)
-	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator.mavenProjectChanged(AbstractMavenArchiverConfigurator.java:220)
-	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.mavenProjectChanged(ProjectConfigurationManager.java:885)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.notifyProjectChangeListeners(ProjectRegistryManager.java:892)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.applyMutableProjectRegistry(ProjectRegistryManager.java:1042)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:324)
-	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.getProjectFacade(MavenBuilder.java:146)
-	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.lambda$0(MavenBuilder.java:84)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
-	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.execute(MavenBuilder.java:83)
-	at org.eclipse.m2e.core.internal.builder.MavenBuilder.build(MavenBuilder.java:192)
-	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1077)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
-	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
-	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
-	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
-	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
-	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:207)
-	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:300)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-Caused by: org.apache.maven.model.building.ModelBuildingException: 1 problem was encountered while building the effective model
-[FATAL] Non-readable POM D:\reportcard-system\backend\reportcard-backend: D:\reportcard-system\backend\reportcard-backend (Access is denied) @ 
-
-	at org.apache.maven.model.building.DefaultModelProblemCollector.newModelBuildingException(DefaultModelProblemCollector.java:176)
-	at org.apache.maven.model.building.DefaultModelBuilder.readModel(DefaultModelBuilder.java:642)
-	at org.apache.maven.model.building.DefaultModelBuilder.build(DefaultModelBuilder.java:262)
-	at org.apache.maven.model.building.DefaultModelBuilder.build(DefaultModelBuilder.java:248)
-	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:176)
-	... 37 more
-
-!ENTRY org.eclipse.lsp4e 2 0 2025-09-09 19:17:49.653
-!MESSAGE Could not get hover region due to timeout after 1000 milliseconds
-!STACK 0
-java.util.concurrent.TimeoutException
-	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
-	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
-	at org.eclipse.lsp4e.operations.hover.LSPTextHover.getHoverRegion(LSPTextHover.java:151)
-	at org.eclipse.ui.internal.genericeditor.hover.CompositeTextHover.getHoverRegion(CompositeTextHover.java:101)
-	at org.eclipse.jface.text.TextViewerHoverManager.computeInformation(TextViewerHoverManager.java:128)
-	at org.eclipse.jface.text.AbstractInformationControlManager.doShowInformation(AbstractInformationControlManager.java:1101)
-	at org.eclipse.jface.text.AbstractHoverInformationControlManager$MouseTracker.mouseHover(AbstractHoverInformationControlManager.java:511)
-	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:246)
-	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:91)
-	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4338)
-	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1214)
-	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4136)
-	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3724)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
-	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
-	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:678)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
-	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:583)
-	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
-	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:185)
-	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:219)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:149)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:115)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:467)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:298)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:627)
-	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:575)
-	at org.eclipse.equinox.launcher.Main.run(Main.java:1431)
-	at org.eclipse.equinox.launcher.Main.main(Main.java:1403)
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-09 19:17:51.868
-!MESSAGE The POM for mysql:mysql-connector-j:jar:8.3.0 is missing, no dependency information available
-
-!ENTRY org.eclipse.m2e.logback.appender 4 0 2025-09-09 19:17:54.190
-!MESSAGE Could not download sources for mysql:mysql-connector-j:8.3.0
-!STACK 1
-org.eclipse.core.runtime.CoreException: Could not resolve artifact mysql:mysql-connector-j:jar:sources:8.3.0
-	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$7(MavenImpl.java:540)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:292)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
-	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:509)
-	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:494)
-	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:308)
-	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:282)
-	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:252)
-	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:220)
-	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:149)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
-	at org.eclipse.m2e.core.embedder.IMaven.execute(IMaven.java:300)
-	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:149)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-Contains: Missing mysql:mysql-connector-j:jar:sources:8.3.0
-!SUBENTRY 1 org.eclipse.m2e.core 4 -1 2025-09-09 19:17:54.191
-!MESSAGE Could not resolve artifact mysql:mysql-connector-j:jar:sources:8.3.0
-!SUBENTRY 2 org.eclipse.m2e.core 4 0 2025-09-09 19:17:54.191
-!MESSAGE Missing mysql:mysql-connector-j:jar:sources:8.3.0
-
-!ENTRY org.eclipse.m2e.logback.appender 4 0 2025-09-09 19:18:08.357
-!MESSAGE Could not read pom.xml
-!STACK 1
-org.eclipse.core.runtime.CoreException: Could not read pom.xml
-	at org.eclipse.m2e.core.internal.IMavenToolbox.readModel(IMavenToolbox.java:245)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refreshPhase2(ProjectRegistryManager.java:591)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:491)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:370)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:322)
-	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.getProjectFacade(MavenBuilder.java:146)
-	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.lambda$0(MavenBuilder.java:84)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
-	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.execute(MavenBuilder.java:83)
-	at org.eclipse.m2e.core.internal.builder.MavenBuilder.build(MavenBuilder.java:192)
-	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1077)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
-	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
-	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
-	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
-	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
-	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:207)
-	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:300)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-Caused by: org.apache.maven.model.io.ModelParseException: expected > to finsh end tag not < from line 40 (position: TEXT seen ...<artifactId>mysql-connector-j</artifactId\n            <... @41:14) 
-	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:96)
-	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:74)
-	at org.eclipse.m2e.core.internal.IMavenToolbox.readModel(IMavenToolbox.java:243)
-	... 24 more
-Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: expected > to finsh end tag not < from line 40 (position: TEXT seen ...<artifactId>mysql-connector-j</artifactId\n            <... @41:14) 
-	at org.codehaus.plexus.util.xml.pull.MXParser.parseEndTag(MXParser.java:2172)
-	at org.codehaus.plexus.util.xml.pull.MXParser.nextImpl(MXParser.java:1418)
-	at org.codehaus.plexus.util.xml.pull.MXParser.next(MXParser.java:1375)
-	at org.codehaus.plexus.util.xml.pull.MXParser.nextText(MXParser.java:1335)
-	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parseDependency(MavenXpp3Reader.java:1430)
-	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parseModel(MavenXpp3Reader.java:2321)
-	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:623)
-	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:654)
-	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:93)
-	... 26 more
-!SUBENTRY 1 org.eclipse.m2e.core 4 0 2025-09-09 19:18:08.357
-!MESSAGE Could not read pom.xml
-!STACK 0
-org.apache.maven.model.io.ModelParseException: expected > to finsh end tag not < from line 40 (position: TEXT seen ...<artifactId>mysql-connector-j</artifactId\n            <... @41:14) 
-	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:96)
-	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:74)
-	at org.eclipse.m2e.core.internal.IMavenToolbox.readModel(IMavenToolbox.java:243)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refreshPhase2(ProjectRegistryManager.java:591)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:491)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:370)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:322)
-	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.getProjectFacade(MavenBuilder.java:146)
-	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.lambda$0(MavenBuilder.java:84)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
-	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.execute(MavenBuilder.java:83)
-	at org.eclipse.m2e.core.internal.builder.MavenBuilder.build(MavenBuilder.java:192)
-	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1077)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
-	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
-	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
-	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
-	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
-	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:207)
-	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:300)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: expected > to finsh end tag not < from line 40 (position: TEXT seen ...<artifactId>mysql-connector-j</artifactId\n            <... @41:14) 
-	at org.codehaus.plexus.util.xml.pull.MXParser.parseEndTag(MXParser.java:2172)
-	at org.codehaus.plexus.util.xml.pull.MXParser.nextImpl(MXParser.java:1418)
-	at org.codehaus.plexus.util.xml.pull.MXParser.next(MXParser.java:1375)
-	at org.codehaus.plexus.util.xml.pull.MXParser.nextText(MXParser.java:1335)
-	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parseDependency(MavenXpp3Reader.java:1430)
-	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parseModel(MavenXpp3Reader.java:2321)
-	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:623)
-	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:654)
-	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:93)
-	... 26 more
-
-!ENTRY org.eclipse.m2e.logback.appender 4 0 2025-09-09 19:18:09.526
-!MESSAGE Could not read pom.xml
-!STACK 1
-org.eclipse.core.runtime.CoreException: Could not read pom.xml
-	at org.eclipse.m2e.core.internal.IMavenToolbox.readModel(IMavenToolbox.java:245)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refreshPhase2(ProjectRegistryManager.java:591)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:491)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:370)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:322)
-	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.getProjectFacade(MavenBuilder.java:146)
-	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.lambda$0(MavenBuilder.java:84)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
-	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.execute(MavenBuilder.java:83)
-	at org.eclipse.m2e.core.internal.builder.MavenBuilder.build(MavenBuilder.java:192)
-	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1077)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
-	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
-	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
-	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
-	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
-	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:207)
-	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:300)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-Caused by: org.apache.maven.model.io.ModelParseException: expected > to finsh end tag not < from line 40 (position: TEXT seen ...<artifactId>mysql-connector-j</artifactId\n            <... @41:14) 
-	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:96)
-	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:74)
-	at org.eclipse.m2e.core.internal.IMavenToolbox.readModel(IMavenToolbox.java:243)
-	... 24 more
-Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: expected > to finsh end tag not < from line 40 (position: TEXT seen ...<artifactId>mysql-connector-j</artifactId\n            <... @41:14) 
-	at org.codehaus.plexus.util.xml.pull.MXParser.parseEndTag(MXParser.java:2172)
-	at org.codehaus.plexus.util.xml.pull.MXParser.nextImpl(MXParser.java:1418)
-	at org.codehaus.plexus.util.xml.pull.MXParser.next(MXParser.java:1375)
-	at org.codehaus.plexus.util.xml.pull.MXParser.nextText(MXParser.java:1335)
-	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parseDependency(MavenXpp3Reader.java:1430)
-	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parseModel(MavenXpp3Reader.java:2321)
-	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:623)
-	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:654)
-	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:93)
-	... 26 more
-!SUBENTRY 1 org.eclipse.m2e.core 4 0 2025-09-09 19:18:09.526
-!MESSAGE Could not read pom.xml
-!STACK 0
-org.apache.maven.model.io.ModelParseException: expected > to finsh end tag not < from line 40 (position: TEXT seen ...<artifactId>mysql-connector-j</artifactId\n            <... @41:14) 
-	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:96)
-	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:74)
-	at org.eclipse.m2e.core.internal.IMavenToolbox.readModel(IMavenToolbox.java:243)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refreshPhase2(ProjectRegistryManager.java:591)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:491)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:370)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:322)
-	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.getProjectFacade(MavenBuilder.java:146)
-	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.lambda$0(MavenBuilder.java:84)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
-	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.execute(MavenBuilder.java:83)
-	at org.eclipse.m2e.core.internal.builder.MavenBuilder.build(MavenBuilder.java:192)
-	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1077)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
-	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
-	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
-	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
-	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
-	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:207)
-	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:300)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: expected > to finsh end tag not < from line 40 (position: TEXT seen ...<artifactId>mysql-connector-j</artifactId\n            <... @41:14) 
-	at org.codehaus.plexus.util.xml.pull.MXParser.parseEndTag(MXParser.java:2172)
-	at org.codehaus.plexus.util.xml.pull.MXParser.nextImpl(MXParser.java:1418)
-	at org.codehaus.plexus.util.xml.pull.MXParser.next(MXParser.java:1375)
-	at org.codehaus.plexus.util.xml.pull.MXParser.nextText(MXParser.java:1335)
-	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parseDependency(MavenXpp3Reader.java:1430)
-	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parseModel(MavenXpp3Reader.java:2321)
-	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:623)
-	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:654)
-	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:93)
-	... 26 more
-
-!ENTRY org.eclipse.m2e.logback.appender 4 0 2025-09-09 19:18:17.673
-!MESSAGE failed to load maven project for org.eclipse.ui.part.FileEditorInput(/reportcard-backend/pom.xml)
-!STACK 1
-org.eclipse.core.runtime.CoreException: Could not read maven project
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectWithDependencies(ProjectRegistryManager.java:917)
-	at org.eclipse.m2e.core.internal.project.registry.MavenProjectCache$CacheLine.lambda$1(MavenProjectCache.java:192)
-	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1708)
-	at org.eclipse.m2e.core.internal.project.registry.MavenProjectCache$CacheLine.getProject(MavenProjectCache.java:191)
-	at org.eclipse.m2e.core.internal.project.registry.MavenProjectCache.getMavenProject(MavenProjectCache.java:105)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.lambda$24(ProjectRegistryManager.java:1101)
-	at java.base/java.util.Map.computeIfAbsent(Map.java:1066)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.getMavenProject(ProjectRegistryManager.java:1100)
-	at org.eclipse.m2e.core.internal.project.registry.MavenProjectFacade.getMavenProject(MavenProjectFacade.java:289)
-	at org.eclipse.m2e.core.ui.internal.actions.SelectionUtil.getMavenProject(SelectionUtil.java:241)
-	at org.eclipse.m2e.editor.pom.MavenPomEditor.readMavenProject(MavenPomEditor.java:709)
-	at org.eclipse.m2e.editor.pom.MavenPomEditor$4.run(MavenPomEditor.java:1029)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-Contains: Some problems were encountered while processing the POMs:
-[ERROR] 'dependencies.dependency.version' for mysql:mysql-connector-j:jar is missing. @ line 38, column 21
-
-org.apache.maven.project.ProjectBuildingException: Some problems were encountered while processing the POMs:
-[ERROR] 'dependencies.dependency.version' for mysql:mysql-connector-j:jar is missing. @ line 38, column 21
-
-	at org.eclipse.m2e.core.internal.IMavenToolbox.readMavenProjects(IMavenToolbox.java:140)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.lambda$22(ProjectRegistryManager.java:943)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectsWithDependencies(ProjectRegistryManager.java:939)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectWithDependencies(ProjectRegistryManager.java:904)
-	at org.eclipse.m2e.core.internal.project.registry.MavenProjectCache$CacheLine.lambda$1(MavenProjectCache.java:192)
-	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1708)
-	at org.eclipse.m2e.core.internal.project.registry.MavenProjectCache$CacheLine.getProject(MavenProjectCache.java:191)
-	at org.eclipse.m2e.core.internal.project.registry.MavenProjectCache.getMavenProject(MavenProjectCache.java:105)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.lambda$24(ProjectRegistryManager.java:1101)
-	at java.base/java.util.Map.computeIfAbsent(Map.java:1066)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.getMavenProject(ProjectRegistryManager.java:1100)
-	at org.eclipse.m2e.core.internal.project.registry.MavenProjectFacade.getMavenProject(MavenProjectFacade.java:289)
-	at org.eclipse.m2e.core.ui.internal.actions.SelectionUtil.getMavenProject(SelectionUtil.java:241)
-	at org.eclipse.m2e.editor.pom.MavenPomEditor.readMavenProject(MavenPomEditor.java:709)
-	at org.eclipse.m2e.editor.pom.MavenPomEditor$4.run(MavenPomEditor.java:1029)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-!SUBENTRY 1 org.eclipse.m2e.core 4 0 2025-09-09 19:18:17.673
-!MESSAGE Could not read maven project
-!SUBENTRY 2 org.eclipse.m2e.core 4 0 2025-09-09 19:18:17.673
-!MESSAGE Some problems were encountered while processing the POMs:
-[ERROR] 'dependencies.dependency.version' for mysql:mysql-connector-j:jar is missing. @ line 38, column 21
-
-!STACK 0
-org.apache.maven.project.ProjectBuildingException: Some problems were encountered while processing the POMs:
-[ERROR] 'dependencies.dependency.version' for mysql:mysql-connector-j:jar is missing. @ line 38, column 21
-
-	at org.eclipse.m2e.core.internal.IMavenToolbox.readMavenProjects(IMavenToolbox.java:140)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.lambda$22(ProjectRegistryManager.java:943)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectsWithDependencies(ProjectRegistryManager.java:939)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectWithDependencies(ProjectRegistryManager.java:904)
-	at org.eclipse.m2e.core.internal.project.registry.MavenProjectCache$CacheLine.lambda$1(MavenProjectCache.java:192)
-	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1708)
-	at org.eclipse.m2e.core.internal.project.registry.MavenProjectCache$CacheLine.getProject(MavenProjectCache.java:191)
-	at org.eclipse.m2e.core.internal.project.registry.MavenProjectCache.getMavenProject(MavenProjectCache.java:105)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.lambda$24(ProjectRegistryManager.java:1101)
-	at java.base/java.util.Map.computeIfAbsent(Map.java:1066)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.getMavenProject(ProjectRegistryManager.java:1100)
-	at org.eclipse.m2e.core.internal.project.registry.MavenProjectFacade.getMavenProject(MavenProjectFacade.java:289)
-	at org.eclipse.m2e.core.ui.internal.actions.SelectionUtil.getMavenProject(SelectionUtil.java:241)
-	at org.eclipse.m2e.editor.pom.MavenPomEditor.readMavenProject(MavenPomEditor.java:709)
-	at org.eclipse.m2e.editor.pom.MavenPomEditor$4.run(MavenPomEditor.java:1029)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-
-!ENTRY org.eclipse.m2e.logback.appender 4 0 2025-09-09 19:18:18.807
-!MESSAGE Could not read maven project
-!STACK 1
-org.eclipse.core.runtime.CoreException: Could not read maven project
-	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$4(MavenImpl.java:371)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:292)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
-	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readProject(MavenImpl.java:361)
-	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator.lambda$4(AbstractMavenArchiverConfigurator.java:576)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
-	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator.loadParentHierarchy(AbstractMavenArchiverConfigurator.java:568)
-	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator.generateManifest(AbstractMavenArchiverConfigurator.java:365)
-	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator.mavenProjectChanged(AbstractMavenArchiverConfigurator.java:228)
-	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator.mavenProjectChanged(AbstractMavenArchiverConfigurator.java:220)
-	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.mavenProjectChanged(ProjectConfigurationManager.java:885)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.notifyProjectChangeListeners(ProjectRegistryManager.java:892)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.applyMutableProjectRegistry(ProjectRegistryManager.java:1042)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:324)
-	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.getProjectFacade(MavenBuilder.java:146)
-	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.lambda$0(MavenBuilder.java:84)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
-	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.execute(MavenBuilder.java:83)
-	at org.eclipse.m2e.core.internal.builder.MavenBuilder.build(MavenBuilder.java:192)
-	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1077)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
-	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
-	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
-	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
-	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
-	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:207)
-	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:300)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-Caused by: org.apache.maven.project.ProjectBuildingException: 1 problem was encountered while building the effective model
-[FATAL] Non-readable POM D:\reportcard-system\backend\reportcard-backend: D:\reportcard-system\backend\reportcard-backend (Access is denied) @ 
- for project  at D:\reportcard-system\backend\reportcard-backend
-	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:180)
-	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:123)
-	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$4(MavenImpl.java:369)
-	... 35 more
-Caused by: org.apache.maven.model.building.ModelBuildingException: 1 problem was encountered while building the effective model
-[FATAL] Non-readable POM D:\reportcard-system\backend\reportcard-backend: D:\reportcard-system\backend\reportcard-backend (Access is denied) @ 
-
-	at org.apache.maven.model.building.DefaultModelProblemCollector.newModelBuildingException(DefaultModelProblemCollector.java:176)
-	at org.apache.maven.model.building.DefaultModelBuilder.readModel(DefaultModelBuilder.java:642)
-	at org.apache.maven.model.building.DefaultModelBuilder.build(DefaultModelBuilder.java:262)
-	at org.apache.maven.model.building.DefaultModelBuilder.build(DefaultModelBuilder.java:248)
-	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:176)
-	... 37 more
-!SUBENTRY 1 org.eclipse.m2e.core 4 0 2025-09-09 19:18:18.807
-!MESSAGE Could not read maven project
-!STACK 0
-org.apache.maven.project.ProjectBuildingException: 1 problem was encountered while building the effective model
-[FATAL] Non-readable POM D:\reportcard-system\backend\reportcard-backend: D:\reportcard-system\backend\reportcard-backend (Access is denied) @ 
- for project  at D:\reportcard-system\backend\reportcard-backend
-	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:180)
-	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:123)
-	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$4(MavenImpl.java:369)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:292)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
-	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readProject(MavenImpl.java:361)
-	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator.lambda$4(AbstractMavenArchiverConfigurator.java:576)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
-	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator.loadParentHierarchy(AbstractMavenArchiverConfigurator.java:568)
-	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator.generateManifest(AbstractMavenArchiverConfigurator.java:365)
-	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator.mavenProjectChanged(AbstractMavenArchiverConfigurator.java:228)
-	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator.mavenProjectChanged(AbstractMavenArchiverConfigurator.java:220)
-	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.mavenProjectChanged(ProjectConfigurationManager.java:885)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.notifyProjectChangeListeners(ProjectRegistryManager.java:892)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.applyMutableProjectRegistry(ProjectRegistryManager.java:1042)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:324)
-	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.getProjectFacade(MavenBuilder.java:146)
-	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.lambda$0(MavenBuilder.java:84)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
-	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.execute(MavenBuilder.java:83)
-	at org.eclipse.m2e.core.internal.builder.MavenBuilder.build(MavenBuilder.java:192)
-	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1077)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
-	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
-	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
-	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
-	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
-	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:207)
-	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:300)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-Caused by: org.apache.maven.model.building.ModelBuildingException: 1 problem was encountered while building the effective model
-[FATAL] Non-readable POM D:\reportcard-system\backend\reportcard-backend: D:\reportcard-system\backend\reportcard-backend (Access is denied) @ 
-
-	at org.apache.maven.model.building.DefaultModelProblemCollector.newModelBuildingException(DefaultModelProblemCollector.java:176)
-	at org.apache.maven.model.building.DefaultModelBuilder.readModel(DefaultModelBuilder.java:642)
-	at org.apache.maven.model.building.DefaultModelBuilder.build(DefaultModelBuilder.java:262)
-	at org.apache.maven.model.building.DefaultModelBuilder.build(DefaultModelBuilder.java:248)
-	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:176)
-	... 37 more
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-09 19:18:21.836
-!MESSAGE The POM for mysql:mysql-connector-j:jar:8.3.0 is missing, no dependency information available
-
-!ENTRY org.eclipse.m2e.logback.appender 4 0 2025-09-09 19:18:24.204
-!MESSAGE Could not download javadoc for mysql:mysql-connector-j:8.3.0
-!STACK 1
-org.eclipse.core.runtime.CoreException: Could not resolve artifact mysql:mysql-connector-j:jar:javadoc:8.3.0
-	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$7(MavenImpl.java:540)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:292)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
-	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:509)
-	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:494)
-	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:308)
-	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:294)
-	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:252)
-	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:220)
-	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:149)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
-	at org.eclipse.m2e.core.embedder.IMaven.execute(IMaven.java:300)
-	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:149)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-Contains: Missing mysql:mysql-connector-j:jar:javadoc:8.3.0
-!SUBENTRY 1 org.eclipse.m2e.core 4 -1 2025-09-09 19:18:24.204
-!MESSAGE Could not resolve artifact mysql:mysql-connector-j:jar:javadoc:8.3.0
-!SUBENTRY 2 org.eclipse.m2e.core 4 0 2025-09-09 19:18:24.204
-!MESSAGE Missing mysql:mysql-connector-j:jar:javadoc:8.3.0
-
-!ENTRY org.eclipse.m2e.logback.appender 4 0 2025-09-09 19:19:19.708
-!MESSAGE Could not read pom.xml
-!STACK 1
-org.eclipse.core.runtime.CoreException: Could not read pom.xml
-	at org.eclipse.m2e.core.internal.IMavenToolbox.readModel(IMavenToolbox.java:245)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refreshPhase2(ProjectRegistryManager.java:591)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:491)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:370)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:322)
-	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.getProjectFacade(MavenBuilder.java:146)
-	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.lambda$0(MavenBuilder.java:84)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
-	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.execute(MavenBuilder.java:83)
-	at org.eclipse.m2e.core.internal.builder.MavenBuilder.build(MavenBuilder.java:192)
-	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1077)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
-	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
-	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
-	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
-	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
-	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:207)
-	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:300)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-Caused by: org.apache.maven.model.io.ModelParseException: start tag unexpected character < (position: TEXT seen ...<dependency>\n            <groupIdorg.springframework.boot<... @54:46) 
-	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:96)
-	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:74)
-	at org.eclipse.m2e.core.internal.IMavenToolbox.readModel(IMavenToolbox.java:243)
-	... 24 more
-Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: start tag unexpected character < (position: TEXT seen ...<dependency>\n            <groupIdorg.springframework.boot<... @54:46) 
-	at org.codehaus.plexus.util.xml.pull.MXParser.parseStartTag(MXParser.java:2286)
-	at org.codehaus.plexus.util.xml.pull.MXParser.nextImpl(MXParser.java:1413)
-	at org.codehaus.plexus.util.xml.pull.MXParser.next(MXParser.java:1375)
-	at org.codehaus.plexus.util.xml.pull.MXParser.nextTag(MXParser.java:1360)
-	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parseDependency(MavenXpp3Reader.java:1422)
-	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parseModel(MavenXpp3Reader.java:2321)
-	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:623)
-	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:654)
-	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:93)
-	... 26 more
-!SUBENTRY 1 org.eclipse.m2e.core 4 0 2025-09-09 19:19:19.709
-!MESSAGE Could not read pom.xml
-!STACK 0
-org.apache.maven.model.io.ModelParseException: start tag unexpected character < (position: TEXT seen ...<dependency>\n            <groupIdorg.springframework.boot<... @54:46) 
-	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:96)
-	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:74)
-	at org.eclipse.m2e.core.internal.IMavenToolbox.readModel(IMavenToolbox.java:243)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refreshPhase2(ProjectRegistryManager.java:591)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:491)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:370)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:322)
-	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.getProjectFacade(MavenBuilder.java:146)
-	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.lambda$0(MavenBuilder.java:84)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
-	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.execute(MavenBuilder.java:83)
-	at org.eclipse.m2e.core.internal.builder.MavenBuilder.build(MavenBuilder.java:192)
-	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1077)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
-	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
-	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
-	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
-	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
-	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:207)
-	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:300)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: start tag unexpected character < (position: TEXT seen ...<dependency>\n            <groupIdorg.springframework.boot<... @54:46) 
-	at org.codehaus.plexus.util.xml.pull.MXParser.parseStartTag(MXParser.java:2286)
-	at org.codehaus.plexus.util.xml.pull.MXParser.nextImpl(MXParser.java:1413)
-	at org.codehaus.plexus.util.xml.pull.MXParser.next(MXParser.java:1375)
-	at org.codehaus.plexus.util.xml.pull.MXParser.nextTag(MXParser.java:1360)
-	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parseDependency(MavenXpp3Reader.java:1422)
-	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parseModel(MavenXpp3Reader.java:2321)
-	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:623)
-	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:654)
-	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:93)
-	... 26 more
-
-!ENTRY org.eclipse.m2e.logback.appender 4 0 2025-09-09 19:19:20.872
-!MESSAGE Could not read pom.xml
-!STACK 1
-org.eclipse.core.runtime.CoreException: Could not read pom.xml
-	at org.eclipse.m2e.core.internal.IMavenToolbox.readModel(IMavenToolbox.java:245)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refreshPhase2(ProjectRegistryManager.java:591)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:491)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:370)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:322)
-	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.getProjectFacade(MavenBuilder.java:146)
-	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.lambda$0(MavenBuilder.java:84)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
-	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.execute(MavenBuilder.java:83)
-	at org.eclipse.m2e.core.internal.builder.MavenBuilder.build(MavenBuilder.java:192)
-	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1077)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
-	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
-	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
-	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
-	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
-	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:207)
-	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:300)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-Caused by: org.apache.maven.model.io.ModelParseException: start tag unexpected character < (position: TEXT seen ...<dependency>\n            <groupIdorg.springframework.boot<... @54:46) 
-	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:96)
-	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:74)
-	at org.eclipse.m2e.core.internal.IMavenToolbox.readModel(IMavenToolbox.java:243)
-	... 24 more
-Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: start tag unexpected character < (position: TEXT seen ...<dependency>\n            <groupIdorg.springframework.boot<... @54:46) 
-	at org.codehaus.plexus.util.xml.pull.MXParser.parseStartTag(MXParser.java:2286)
-	at org.codehaus.plexus.util.xml.pull.MXParser.nextImpl(MXParser.java:1413)
-	at org.codehaus.plexus.util.xml.pull.MXParser.next(MXParser.java:1375)
-	at org.codehaus.plexus.util.xml.pull.MXParser.nextTag(MXParser.java:1360)
-	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parseDependency(MavenXpp3Reader.java:1422)
-	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parseModel(MavenXpp3Reader.java:2321)
-	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:623)
-	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:654)
-	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:93)
-	... 26 more
-!SUBENTRY 1 org.eclipse.m2e.core 4 0 2025-09-09 19:19:20.872
-!MESSAGE Could not read pom.xml
-!STACK 0
-org.apache.maven.model.io.ModelParseException: start tag unexpected character < (position: TEXT seen ...<dependency>\n            <groupIdorg.springframework.boot<... @54:46) 
-	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:96)
-	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:74)
-	at org.eclipse.m2e.core.internal.IMavenToolbox.readModel(IMavenToolbox.java:243)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refreshPhase2(ProjectRegistryManager.java:591)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:491)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:370)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:322)
-	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.getProjectFacade(MavenBuilder.java:146)
-	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.lambda$0(MavenBuilder.java:84)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
-	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.execute(MavenBuilder.java:83)
-	at org.eclipse.m2e.core.internal.builder.MavenBuilder.build(MavenBuilder.java:192)
-	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1077)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
-	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
-	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
-	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
-	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
-	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:207)
-	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:300)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: start tag unexpected character < (position: TEXT seen ...<dependency>\n            <groupIdorg.springframework.boot<... @54:46) 
-	at org.codehaus.plexus.util.xml.pull.MXParser.parseStartTag(MXParser.java:2286)
-	at org.codehaus.plexus.util.xml.pull.MXParser.nextImpl(MXParser.java:1413)
-	at org.codehaus.plexus.util.xml.pull.MXParser.next(MXParser.java:1375)
-	at org.codehaus.plexus.util.xml.pull.MXParser.nextTag(MXParser.java:1360)
-	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parseDependency(MavenXpp3Reader.java:1422)
-	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parseModel(MavenXpp3Reader.java:2321)
-	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:623)
-	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:654)
-	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:93)
-	... 26 more
-
-!ENTRY org.eclipse.m2e.logback.appender 4 0 2025-09-09 19:19:22.490
-!MESSAGE Failed to read Maven project: Some problems were encountered while processing the POMs:
-[FATAL] Non-parseable POM D:\reportcard-system\backend\reportcard-backend\pom.xml: start tag unexpected character < (position: TEXT seen ...</artifactId>\n            <version<... @41:22)  @ line 41, column 22
-!STACK 0
-org.apache.maven.project.ProjectBuildingException: Some problems were encountered while processing the POMs:
-[FATAL] Non-parseable POM D:\reportcard-system\backend\reportcard-backend\pom.xml: start tag unexpected character < (position: TEXT seen ...</artifactId>\n            <version<... @41:22)  @ line 41, column 22
-
-	at org.eclipse.m2e.core.internal.IMavenToolbox.readMavenProjects(IMavenToolbox.java:140)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.lambda$22(ProjectRegistryManager.java:943)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectsWithDependencies(ProjectRegistryManager.java:939)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.create(ProjectRegistryManager.java:219)
-	at org.eclipse.m2e.core.internal.project.registry.MavenProjectManager.create(MavenProjectManager.java:105)
-	at org.eclipse.m2e.core.ui.internal.actions.SelectionUtil.getMavenProject(SelectionUtil.java:239)
-	at org.eclipse.m2e.editor.pom.MavenPomEditor.readMavenProject(MavenPomEditor.java:709)
-	at org.eclipse.m2e.editor.pom.MavenPomEditor$4.run(MavenPomEditor.java:1029)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-
-!ENTRY org.eclipse.m2e.logback.appender 4 0 2025-09-09 19:19:23.263
-!MESSAGE Could not read pom.xml
-!STACK 1
-org.eclipse.core.runtime.CoreException: Could not read pom.xml
-	at org.eclipse.m2e.core.internal.IMavenToolbox.readModel(IMavenToolbox.java:245)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refreshPhase2(ProjectRegistryManager.java:591)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:491)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:370)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:322)
-	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.getProjectFacade(MavenBuilder.java:146)
-	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.lambda$0(MavenBuilder.java:84)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
-	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.execute(MavenBuilder.java:83)
-	at org.eclipse.m2e.core.internal.builder.MavenBuilder.build(MavenBuilder.java:192)
-	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1077)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
-	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
-	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
-	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
-	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
-	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:207)
-	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:300)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-Caused by: org.apache.maven.model.io.ModelParseException: start tag unexpected character < (position: TEXT seen ...</artifactId>\n            <version<... @41:22) 
-	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:96)
-	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:74)
-	at org.eclipse.m2e.core.internal.IMavenToolbox.readModel(IMavenToolbox.java:243)
-	... 24 more
-Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: start tag unexpected character < (position: TEXT seen ...</artifactId>\n            <version<... @41:22) 
-	at org.codehaus.plexus.util.xml.pull.MXParser.parseStartTag(MXParser.java:2286)
-	at org.codehaus.plexus.util.xml.pull.MXParser.nextImpl(MXParser.java:1413)
-	at org.codehaus.plexus.util.xml.pull.MXParser.next(MXParser.java:1375)
-	at org.codehaus.plexus.util.xml.pull.MXParser.nextTag(MXParser.java:1360)
-	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parseDependency(MavenXpp3Reader.java:1422)
-	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parseModel(MavenXpp3Reader.java:2321)
-	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:623)
-	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:654)
-	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:93)
-	... 26 more
-!SUBENTRY 1 org.eclipse.m2e.core 4 0 2025-09-09 19:19:23.263
-!MESSAGE Could not read pom.xml
-!STACK 0
-org.apache.maven.model.io.ModelParseException: start tag unexpected character < (position: TEXT seen ...</artifactId>\n            <version<... @41:22) 
-	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:96)
-	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:74)
-	at org.eclipse.m2e.core.internal.IMavenToolbox.readModel(IMavenToolbox.java:243)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refreshPhase2(ProjectRegistryManager.java:591)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:491)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:370)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:322)
-	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.getProjectFacade(MavenBuilder.java:146)
-	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.lambda$0(MavenBuilder.java:84)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
-	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.execute(MavenBuilder.java:83)
-	at org.eclipse.m2e.core.internal.builder.MavenBuilder.build(MavenBuilder.java:192)
-	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1077)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
-	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
-	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
-	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
-	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
-	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:207)
-	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:300)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: start tag unexpected character < (position: TEXT seen ...</artifactId>\n            <version<... @41:22) 
-	at org.codehaus.plexus.util.xml.pull.MXParser.parseStartTag(MXParser.java:2286)
-	at org.codehaus.plexus.util.xml.pull.MXParser.nextImpl(MXParser.java:1413)
-	at org.codehaus.plexus.util.xml.pull.MXParser.next(MXParser.java:1375)
-	at org.codehaus.plexus.util.xml.pull.MXParser.nextTag(MXParser.java:1360)
-	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parseDependency(MavenXpp3Reader.java:1422)
-	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parseModel(MavenXpp3Reader.java:2321)
-	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:623)
-	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:654)
-	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:93)
-	... 26 more
-
-!ENTRY org.eclipse.m2e.logback.appender 4 0 2025-09-09 19:19:27.733
-!MESSAGE failed to load maven project for org.eclipse.ui.part.FileEditorInput(/reportcard-backend/pom.xml)
-!STACK 1
-org.eclipse.core.runtime.CoreException: Could not read maven project
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectWithDependencies(ProjectRegistryManager.java:917)
-	at org.eclipse.m2e.core.internal.project.registry.MavenProjectCache$CacheLine.lambda$1(MavenProjectCache.java:192)
-	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1708)
-	at org.eclipse.m2e.core.internal.project.registry.MavenProjectCache$CacheLine.getProject(MavenProjectCache.java:191)
-	at org.eclipse.m2e.core.internal.project.registry.MavenProjectCache.getMavenProject(MavenProjectCache.java:105)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.lambda$24(ProjectRegistryManager.java:1101)
-	at java.base/java.util.Map.computeIfAbsent(Map.java:1066)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.getMavenProject(ProjectRegistryManager.java:1100)
-	at org.eclipse.m2e.core.internal.project.registry.MavenProjectFacade.getMavenProject(MavenProjectFacade.java:289)
-	at org.eclipse.m2e.core.ui.internal.actions.SelectionUtil.getMavenProject(SelectionUtil.java:241)
-	at org.eclipse.m2e.editor.pom.MavenPomEditor.readMavenProject(MavenPomEditor.java:709)
-	at org.eclipse.m2e.editor.pom.MavenPomEditor$4.run(MavenPomEditor.java:1029)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-Contains: Some problems were encountered while processing the POMs:
-[ERROR] 'dependencies.dependency.version' for mysql:mysql-connector-j:jar is missing. @ line 41, column 22
-
-org.apache.maven.project.ProjectBuildingException: Some problems were encountered while processing the POMs:
-[ERROR] 'dependencies.dependency.version' for mysql:mysql-connector-j:jar is missing. @ line 41, column 22
-
-	at org.eclipse.m2e.core.internal.IMavenToolbox.readMavenProjects(IMavenToolbox.java:140)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.lambda$22(ProjectRegistryManager.java:943)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectsWithDependencies(ProjectRegistryManager.java:939)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectWithDependencies(ProjectRegistryManager.java:904)
-	at org.eclipse.m2e.core.internal.project.registry.MavenProjectCache$CacheLine.lambda$1(MavenProjectCache.java:192)
-	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1708)
-	at org.eclipse.m2e.core.internal.project.registry.MavenProjectCache$CacheLine.getProject(MavenProjectCache.java:191)
-	at org.eclipse.m2e.core.internal.project.registry.MavenProjectCache.getMavenProject(MavenProjectCache.java:105)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.lambda$24(ProjectRegistryManager.java:1101)
-	at java.base/java.util.Map.computeIfAbsent(Map.java:1066)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.getMavenProject(ProjectRegistryManager.java:1100)
-	at org.eclipse.m2e.core.internal.project.registry.MavenProjectFacade.getMavenProject(MavenProjectFacade.java:289)
-	at org.eclipse.m2e.core.ui.internal.actions.SelectionUtil.getMavenProject(SelectionUtil.java:241)
-	at org.eclipse.m2e.editor.pom.MavenPomEditor.readMavenProject(MavenPomEditor.java:709)
-	at org.eclipse.m2e.editor.pom.MavenPomEditor$4.run(MavenPomEditor.java:1029)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-!SUBENTRY 1 org.eclipse.m2e.core 4 0 2025-09-09 19:19:27.733
-!MESSAGE Could not read maven project
-!SUBENTRY 2 org.eclipse.m2e.core 4 0 2025-09-09 19:19:27.733
-!MESSAGE Some problems were encountered while processing the POMs:
-[ERROR] 'dependencies.dependency.version' for mysql:mysql-connector-j:jar is missing. @ line 41, column 22
-
-!STACK 0
-org.apache.maven.project.ProjectBuildingException: Some problems were encountered while processing the POMs:
-[ERROR] 'dependencies.dependency.version' for mysql:mysql-connector-j:jar is missing. @ line 41, column 22
-
-	at org.eclipse.m2e.core.internal.IMavenToolbox.readMavenProjects(IMavenToolbox.java:140)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.lambda$22(ProjectRegistryManager.java:943)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectsWithDependencies(ProjectRegistryManager.java:939)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectWithDependencies(ProjectRegistryManager.java:904)
-	at org.eclipse.m2e.core.internal.project.registry.MavenProjectCache$CacheLine.lambda$1(MavenProjectCache.java:192)
-	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1708)
-	at org.eclipse.m2e.core.internal.project.registry.MavenProjectCache$CacheLine.getProject(MavenProjectCache.java:191)
-	at org.eclipse.m2e.core.internal.project.registry.MavenProjectCache.getMavenProject(MavenProjectCache.java:105)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.lambda$24(ProjectRegistryManager.java:1101)
-	at java.base/java.util.Map.computeIfAbsent(Map.java:1066)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.getMavenProject(ProjectRegistryManager.java:1100)
-	at org.eclipse.m2e.core.internal.project.registry.MavenProjectFacade.getMavenProject(MavenProjectFacade.java:289)
-	at org.eclipse.m2e.core.ui.internal.actions.SelectionUtil.getMavenProject(SelectionUtil.java:241)
-	at org.eclipse.m2e.editor.pom.MavenPomEditor.readMavenProject(MavenPomEditor.java:709)
-	at org.eclipse.m2e.editor.pom.MavenPomEditor$4.run(MavenPomEditor.java:1029)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-
-!ENTRY org.eclipse.m2e.logback.appender 4 0 2025-09-09 19:19:28.815
-!MESSAGE Could not read maven project
-!STACK 1
-org.eclipse.core.runtime.CoreException: Could not read maven project
-	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$4(MavenImpl.java:371)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:292)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
-	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readProject(MavenImpl.java:361)
-	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator.lambda$4(AbstractMavenArchiverConfigurator.java:576)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
-	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator.loadParentHierarchy(AbstractMavenArchiverConfigurator.java:568)
-	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator.generateManifest(AbstractMavenArchiverConfigurator.java:365)
-	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator.mavenProjectChanged(AbstractMavenArchiverConfigurator.java:228)
-	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator.mavenProjectChanged(AbstractMavenArchiverConfigurator.java:220)
-	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.mavenProjectChanged(ProjectConfigurationManager.java:885)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.notifyProjectChangeListeners(ProjectRegistryManager.java:892)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.applyMutableProjectRegistry(ProjectRegistryManager.java:1042)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:324)
-	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.getProjectFacade(MavenBuilder.java:146)
-	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.lambda$0(MavenBuilder.java:84)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
-	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.execute(MavenBuilder.java:83)
-	at org.eclipse.m2e.core.internal.builder.MavenBuilder.build(MavenBuilder.java:192)
-	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1077)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
-	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
-	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
-	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
-	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
-	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:207)
-	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:300)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-Caused by: org.apache.maven.project.ProjectBuildingException: 1 problem was encountered while building the effective model
-[FATAL] Non-readable POM D:\reportcard-system\backend\reportcard-backend: D:\reportcard-system\backend\reportcard-backend (Access is denied) @ 
- for project  at D:\reportcard-system\backend\reportcard-backend
-	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:180)
-	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:123)
-	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$4(MavenImpl.java:369)
-	... 35 more
-Caused by: org.apache.maven.model.building.ModelBuildingException: 1 problem was encountered while building the effective model
-[FATAL] Non-readable POM D:\reportcard-system\backend\reportcard-backend: D:\reportcard-system\backend\reportcard-backend (Access is denied) @ 
-
-	at org.apache.maven.model.building.DefaultModelProblemCollector.newModelBuildingException(DefaultModelProblemCollector.java:176)
-	at org.apache.maven.model.building.DefaultModelBuilder.readModel(DefaultModelBuilder.java:642)
-	at org.apache.maven.model.building.DefaultModelBuilder.build(DefaultModelBuilder.java:262)
-	at org.apache.maven.model.building.DefaultModelBuilder.build(DefaultModelBuilder.java:248)
-	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:176)
-	... 37 more
-!SUBENTRY 1 org.eclipse.m2e.core 4 0 2025-09-09 19:19:28.815
-!MESSAGE Could not read maven project
-!STACK 0
-org.apache.maven.project.ProjectBuildingException: 1 problem was encountered while building the effective model
-[FATAL] Non-readable POM D:\reportcard-system\backend\reportcard-backend: D:\reportcard-system\backend\reportcard-backend (Access is denied) @ 
- for project  at D:\reportcard-system\backend\reportcard-backend
-	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:180)
-	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:123)
-	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$4(MavenImpl.java:369)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:292)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
-	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readProject(MavenImpl.java:361)
-	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator.lambda$4(AbstractMavenArchiverConfigurator.java:576)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
-	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator.loadParentHierarchy(AbstractMavenArchiverConfigurator.java:568)
-	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator.generateManifest(AbstractMavenArchiverConfigurator.java:365)
-	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator.mavenProjectChanged(AbstractMavenArchiverConfigurator.java:228)
-	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator.mavenProjectChanged(AbstractMavenArchiverConfigurator.java:220)
-	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.mavenProjectChanged(ProjectConfigurationManager.java:885)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.notifyProjectChangeListeners(ProjectRegistryManager.java:892)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.applyMutableProjectRegistry(ProjectRegistryManager.java:1042)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:324)
-	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.getProjectFacade(MavenBuilder.java:146)
-	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.lambda$0(MavenBuilder.java:84)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
-	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.execute(MavenBuilder.java:83)
-	at org.eclipse.m2e.core.internal.builder.MavenBuilder.build(MavenBuilder.java:192)
-	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1077)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
-	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
-	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
-	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
-	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
-	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:207)
-	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:300)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-Caused by: org.apache.maven.model.building.ModelBuildingException: 1 problem was encountered while building the effective model
-[FATAL] Non-readable POM D:\reportcard-system\backend\reportcard-backend: D:\reportcard-system\backend\reportcard-backend (Access is denied) @ 
-
-	at org.apache.maven.model.building.DefaultModelProblemCollector.newModelBuildingException(DefaultModelProblemCollector.java:176)
-	at org.apache.maven.model.building.DefaultModelBuilder.readModel(DefaultModelBuilder.java:642)
-	at org.apache.maven.model.building.DefaultModelBuilder.build(DefaultModelBuilder.java:262)
-	at org.apache.maven.model.building.DefaultModelBuilder.build(DefaultModelBuilder.java:248)
-	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:176)
-	... 37 more
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-09 19:19:31.798
-!MESSAGE The POM for mysql:mysql-connector-j:jar:8.3.0 is missing, no dependency information available
-
-!ENTRY org.eclipse.ui 4 0 2025-09-09 19:19:43.884
-!MESSAGE Unhandled event loop exception
-!STACK 0
-java.lang.NullPointerException: Cannot invoke "org.eclipse.jface.internal.text.html.BrowserInformationControlInput.getHtml()" because "this.fInput" is null
-	at org.eclipse.jface.internal.text.html.BrowserInformationControl.computeSizeHint(BrowserInformationControl.java:432)
-	at org.eclipse.lsp4e.operations.hover.FocusableBrowserInformationControl.updateBrowserSize(FocusableBrowserInformationControl.java:101)
-	at org.eclipse.lsp4e.operations.hover.FocusableBrowserInformationControl.lambda$1(FocusableBrowserInformationControl.java:105)
-	at org.eclipse.swt.widgets.Display.runTimer(Display.java:4234)
-	at org.eclipse.swt.widgets.Display.messageProc(Display.java:3347)
-	at org.eclipse.swt.internal.win32.OS.DispatchMessage(Native Method)
-	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3722)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
-	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
-	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:678)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
-	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:583)
-	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
-	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:185)
-	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:219)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:149)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:115)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:467)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:298)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:627)
-	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:575)
-	at org.eclipse.equinox.launcher.Main.run(Main.java:1431)
-	at org.eclipse.equinox.launcher.Main.main(Main.java:1403)
-
-!ENTRY org.eclipse.m2e.logback.appender 4 0 2025-09-09 19:19:45.800
-!MESSAGE Could not read pom.xml
-!STACK 1
-org.eclipse.core.runtime.CoreException: Could not read pom.xml
-	at org.eclipse.m2e.core.internal.IMavenToolbox.readModel(IMavenToolbox.java:245)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refreshPhase2(ProjectRegistryManager.java:591)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:491)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:370)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:322)
-	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.getProjectFacade(MavenBuilder.java:146)
-	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.lambda$0(MavenBuilder.java:84)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
-	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.execute(MavenBuilder.java:83)
-	at org.eclipse.m2e.core.internal.builder.MavenBuilder.build(MavenBuilder.java:192)
-	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1077)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
-	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
-	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
-	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
-	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
-	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:207)
-	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:300)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-Caused by: org.apache.maven.model.io.ModelParseException: unexpected character in markup \n (position: START_TAG seen ...</artifactId>\n            <version>9.1.0<\n... @42:1) 
-	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:96)
-	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:74)
-	at org.eclipse.m2e.core.internal.IMavenToolbox.readModel(IMavenToolbox.java:243)
-	... 24 more
-Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: unexpected character in markup \n (position: START_TAG seen ...</artifactId>\n            <version>9.1.0<\n... @42:1) 
-	at org.codehaus.plexus.util.xml.pull.MXParser.nextImpl(MXParser.java:1582)
-	at org.codehaus.plexus.util.xml.pull.MXParser.next(MXParser.java:1375)
-	at org.codehaus.plexus.util.xml.pull.MXParser.nextText(MXParser.java:1331)
-	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parseDependency(MavenXpp3Reader.java:1434)
-	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parseModel(MavenXpp3Reader.java:2321)
-	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:623)
-	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:654)
-	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:93)
-	... 26 more
-!SUBENTRY 1 org.eclipse.m2e.core 4 0 2025-09-09 19:19:45.800
-!MESSAGE Could not read pom.xml
-!STACK 0
-org.apache.maven.model.io.ModelParseException: unexpected character in markup \n (position: START_TAG seen ...</artifactId>\n            <version>9.1.0<\n... @42:1) 
-	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:96)
-	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:74)
-	at org.eclipse.m2e.core.internal.IMavenToolbox.readModel(IMavenToolbox.java:243)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refreshPhase2(ProjectRegistryManager.java:591)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:491)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:370)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:322)
-	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.getProjectFacade(MavenBuilder.java:146)
-	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.lambda$0(MavenBuilder.java:84)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
-	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.execute(MavenBuilder.java:83)
-	at org.eclipse.m2e.core.internal.builder.MavenBuilder.build(MavenBuilder.java:192)
-	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1077)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
-	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
-	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
-	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
-	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
-	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:207)
-	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:300)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: unexpected character in markup \n (position: START_TAG seen ...</artifactId>\n            <version>9.1.0<\n... @42:1) 
-	at org.codehaus.plexus.util.xml.pull.MXParser.nextImpl(MXParser.java:1582)
-	at org.codehaus.plexus.util.xml.pull.MXParser.next(MXParser.java:1375)
-	at org.codehaus.plexus.util.xml.pull.MXParser.nextText(MXParser.java:1331)
-	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parseDependency(MavenXpp3Reader.java:1434)
-	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parseModel(MavenXpp3Reader.java:2321)
-	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:623)
-	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:654)
-	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:93)
-	... 26 more
-
-!ENTRY org.eclipse.m2e.logback.appender 4 0 2025-09-09 19:19:46.960
-!MESSAGE Could not read pom.xml
-!STACK 1
-org.eclipse.core.runtime.CoreException: Could not read pom.xml
-	at org.eclipse.m2e.core.internal.IMavenToolbox.readModel(IMavenToolbox.java:245)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refreshPhase2(ProjectRegistryManager.java:591)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:491)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:370)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:322)
-	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.getProjectFacade(MavenBuilder.java:146)
-	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.lambda$0(MavenBuilder.java:84)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
-	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.execute(MavenBuilder.java:83)
-	at org.eclipse.m2e.core.internal.builder.MavenBuilder.build(MavenBuilder.java:192)
-	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1077)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
-	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
-	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
-	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
-	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
-	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:207)
-	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:300)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-Caused by: org.apache.maven.model.io.ModelParseException: unexpected character in markup \n (position: START_TAG seen ...</artifactId>\n            <version>9.1.0<\n... @42:1) 
-	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:96)
-	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:74)
-	at org.eclipse.m2e.core.internal.IMavenToolbox.readModel(IMavenToolbox.java:243)
-	... 24 more
-Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: unexpected character in markup \n (position: START_TAG seen ...</artifactId>\n            <version>9.1.0<\n... @42:1) 
-	at org.codehaus.plexus.util.xml.pull.MXParser.nextImpl(MXParser.java:1582)
-	at org.codehaus.plexus.util.xml.pull.MXParser.next(MXParser.java:1375)
-	at org.codehaus.plexus.util.xml.pull.MXParser.nextText(MXParser.java:1331)
-	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parseDependency(MavenXpp3Reader.java:1434)
-	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parseModel(MavenXpp3Reader.java:2321)
-	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:623)
-	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:654)
-	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:93)
-	... 26 more
-!SUBENTRY 1 org.eclipse.m2e.core 4 0 2025-09-09 19:19:46.960
-!MESSAGE Could not read pom.xml
-!STACK 0
-org.apache.maven.model.io.ModelParseException: unexpected character in markup \n (position: START_TAG seen ...</artifactId>\n            <version>9.1.0<\n... @42:1) 
-	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:96)
-	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:74)
-	at org.eclipse.m2e.core.internal.IMavenToolbox.readModel(IMavenToolbox.java:243)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refreshPhase2(ProjectRegistryManager.java:591)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:491)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:370)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:322)
-	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.getProjectFacade(MavenBuilder.java:146)
-	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.lambda$0(MavenBuilder.java:84)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
-	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.execute(MavenBuilder.java:83)
-	at org.eclipse.m2e.core.internal.builder.MavenBuilder.build(MavenBuilder.java:192)
-	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1077)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
-	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
-	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
-	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
-	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
-	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:207)
-	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:300)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: unexpected character in markup \n (position: START_TAG seen ...</artifactId>\n            <version>9.1.0<\n... @42:1) 
-	at org.codehaus.plexus.util.xml.pull.MXParser.nextImpl(MXParser.java:1582)
-	at org.codehaus.plexus.util.xml.pull.MXParser.next(MXParser.java:1375)
-	at org.codehaus.plexus.util.xml.pull.MXParser.nextText(MXParser.java:1331)
-	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parseDependency(MavenXpp3Reader.java:1434)
-	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parseModel(MavenXpp3Reader.java:2321)
-	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:623)
-	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:654)
-	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:93)
-	... 26 more
-
-!ENTRY org.eclipse.m2e.logback.appender 4 0 2025-09-09 19:19:48.520
-!MESSAGE Failed to read Maven project: Some problems were encountered while processing the POMs:
-[FATAL] Non-parseable POM D:\reportcard-system\backend\reportcard-backend\pom.xml: start tag unexpected character < (position: TEXT seen ...<version>9.1.0<v0\n            <... @42:14)  @ line 42, column 14
-!STACK 0
-org.apache.maven.project.ProjectBuildingException: Some problems were encountered while processing the POMs:
-[FATAL] Non-parseable POM D:\reportcard-system\backend\reportcard-backend\pom.xml: start tag unexpected character < (position: TEXT seen ...<version>9.1.0<v0\n            <... @42:14)  @ line 42, column 14
-
-	at org.eclipse.m2e.core.internal.IMavenToolbox.readMavenProjects(IMavenToolbox.java:140)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.lambda$22(ProjectRegistryManager.java:943)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectsWithDependencies(ProjectRegistryManager.java:939)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.create(ProjectRegistryManager.java:219)
-	at org.eclipse.m2e.core.internal.project.registry.MavenProjectManager.create(MavenProjectManager.java:105)
-	at org.eclipse.m2e.core.ui.internal.actions.SelectionUtil.getMavenProject(SelectionUtil.java:239)
-	at org.eclipse.m2e.editor.pom.MavenPomEditor.readMavenProject(MavenPomEditor.java:709)
-	at org.eclipse.m2e.editor.pom.MavenPomEditor$4.run(MavenPomEditor.java:1029)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-
-!ENTRY org.eclipse.m2e.logback.appender 4 0 2025-09-09 19:19:49.455
-!MESSAGE Could not read pom.xml
-!STACK 1
-org.eclipse.core.runtime.CoreException: Could not read pom.xml
-	at org.eclipse.m2e.core.internal.IMavenToolbox.readModel(IMavenToolbox.java:245)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refreshPhase2(ProjectRegistryManager.java:591)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:491)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:370)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:322)
-	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.getProjectFacade(MavenBuilder.java:146)
-	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.lambda$0(MavenBuilder.java:84)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
-	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.execute(MavenBuilder.java:83)
-	at org.eclipse.m2e.core.internal.builder.MavenBuilder.build(MavenBuilder.java:192)
-	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1077)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
-	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
-	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
-	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
-	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
-	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:207)
-	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:300)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-Caused by: org.apache.maven.model.io.ModelParseException: start tag unexpected character < (position: TEXT seen ...<version>9.1.0<v0\n            <... @42:14) 
-	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:96)
-	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:74)
-	at org.eclipse.m2e.core.internal.IMavenToolbox.readModel(IMavenToolbox.java:243)
-	... 24 more
-Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: start tag unexpected character < (position: TEXT seen ...<version>9.1.0<v0\n            <... @42:14) 
-	at org.codehaus.plexus.util.xml.pull.MXParser.parseStartTag(MXParser.java:2286)
-	at org.codehaus.plexus.util.xml.pull.MXParser.nextImpl(MXParser.java:1413)
-	at org.codehaus.plexus.util.xml.pull.MXParser.next(MXParser.java:1375)
-	at org.codehaus.plexus.util.xml.pull.MXParser.nextText(MXParser.java:1335)
-	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parseDependency(MavenXpp3Reader.java:1434)
-	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parseModel(MavenXpp3Reader.java:2321)
-	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:623)
-	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:654)
-	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:93)
-	... 26 more
-!SUBENTRY 1 org.eclipse.m2e.core 4 0 2025-09-09 19:19:49.455
-!MESSAGE Could not read pom.xml
-!STACK 0
-org.apache.maven.model.io.ModelParseException: start tag unexpected character < (position: TEXT seen ...<version>9.1.0<v0\n            <... @42:14) 
-	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:96)
-	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:74)
-	at org.eclipse.m2e.core.internal.IMavenToolbox.readModel(IMavenToolbox.java:243)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refreshPhase2(ProjectRegistryManager.java:591)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:491)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:370)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:322)
-	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.getProjectFacade(MavenBuilder.java:146)
-	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.lambda$0(MavenBuilder.java:84)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
-	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.execute(MavenBuilder.java:83)
-	at org.eclipse.m2e.core.internal.builder.MavenBuilder.build(MavenBuilder.java:192)
-	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1077)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
-	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
-	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
-	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
-	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
-	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:207)
-	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:300)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: start tag unexpected character < (position: TEXT seen ...<version>9.1.0<v0\n            <... @42:14) 
-	at org.codehaus.plexus.util.xml.pull.MXParser.parseStartTag(MXParser.java:2286)
-	at org.codehaus.plexus.util.xml.pull.MXParser.nextImpl(MXParser.java:1413)
-	at org.codehaus.plexus.util.xml.pull.MXParser.next(MXParser.java:1375)
-	at org.codehaus.plexus.util.xml.pull.MXParser.nextText(MXParser.java:1335)
-	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parseDependency(MavenXpp3Reader.java:1434)
-	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parseModel(MavenXpp3Reader.java:2321)
-	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:623)
-	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:654)
-	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:93)
-	... 26 more
-
-!ENTRY org.eclipse.m2e.logback.appender 4 0 2025-09-09 19:19:53.722
-!MESSAGE Failed to read Maven project: Some problems were encountered while processing the POMs:
-[FATAL] Non-parseable POM D:\reportcard-system\backend\reportcard-backend\pom.xml: TEXT must be immediately followed by END_TAG and not START_TAG (position: START_TAG seen ...<version>9.1.0<version>... @41:36)  @ line 41, column 36
-!STACK 0
-org.apache.maven.project.ProjectBuildingException: Some problems were encountered while processing the POMs:
-[FATAL] Non-parseable POM D:\reportcard-system\backend\reportcard-backend\pom.xml: TEXT must be immediately followed by END_TAG and not START_TAG (position: START_TAG seen ...<version>9.1.0<version>... @41:36)  @ line 41, column 36
-
-	at org.eclipse.m2e.core.internal.IMavenToolbox.readMavenProjects(IMavenToolbox.java:140)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.lambda$22(ProjectRegistryManager.java:943)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectsWithDependencies(ProjectRegistryManager.java:939)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.create(ProjectRegistryManager.java:219)
-	at org.eclipse.m2e.core.internal.project.registry.MavenProjectManager.create(MavenProjectManager.java:105)
-	at org.eclipse.m2e.core.ui.internal.actions.SelectionUtil.getMavenProject(SelectionUtil.java:239)
-	at org.eclipse.m2e.editor.pom.MavenPomEditor.readMavenProject(MavenPomEditor.java:709)
-	at org.eclipse.m2e.editor.pom.MavenPomEditor$4.run(MavenPomEditor.java:1029)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-
-!ENTRY org.eclipse.m2e.logback.appender 4 0 2025-09-09 19:19:54.460
-!MESSAGE Could not read pom.xml
-!STACK 1
-org.eclipse.core.runtime.CoreException: Could not read pom.xml
-	at org.eclipse.m2e.core.internal.IMavenToolbox.readModel(IMavenToolbox.java:245)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refreshPhase2(ProjectRegistryManager.java:591)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:491)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:370)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:322)
-	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.getProjectFacade(MavenBuilder.java:146)
-	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.lambda$0(MavenBuilder.java:84)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
-	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.execute(MavenBuilder.java:83)
-	at org.eclipse.m2e.core.internal.builder.MavenBuilder.build(MavenBuilder.java:192)
-	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1077)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
-	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
-	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
-	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
-	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
-	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:207)
-	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:300)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-Caused by: org.apache.maven.model.io.ModelParseException: TEXT must be immediately followed by END_TAG and not START_TAG (position: START_TAG seen ...<version>9.1.0<version>... @41:36) 
-	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:96)
-	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:74)
-	at org.eclipse.m2e.core.internal.IMavenToolbox.readModel(IMavenToolbox.java:243)
-	... 24 more
-Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: TEXT must be immediately followed by END_TAG and not START_TAG (position: START_TAG seen ...<version>9.1.0<version>... @41:36) 
-	at org.codehaus.plexus.util.xml.pull.MXParser.nextText(MXParser.java:1339)
-	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parseDependency(MavenXpp3Reader.java:1434)
-	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parseModel(MavenXpp3Reader.java:2321)
-	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:623)
-	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:654)
-	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:93)
-	... 26 more
-!SUBENTRY 1 org.eclipse.m2e.core 4 0 2025-09-09 19:19:54.460
-!MESSAGE Could not read pom.xml
-!STACK 0
-org.apache.maven.model.io.ModelParseException: TEXT must be immediately followed by END_TAG and not START_TAG (position: START_TAG seen ...<version>9.1.0<version>... @41:36) 
-	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:96)
-	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:74)
-	at org.eclipse.m2e.core.internal.IMavenToolbox.readModel(IMavenToolbox.java:243)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refreshPhase2(ProjectRegistryManager.java:591)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:491)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:370)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:322)
-	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.getProjectFacade(MavenBuilder.java:146)
-	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.lambda$0(MavenBuilder.java:84)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
-	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.execute(MavenBuilder.java:83)
-	at org.eclipse.m2e.core.internal.builder.MavenBuilder.build(MavenBuilder.java:192)
-	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1077)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
-	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
-	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
-	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
-	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
-	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:207)
-	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:300)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: TEXT must be immediately followed by END_TAG and not START_TAG (position: START_TAG seen ...<version>9.1.0<version>... @41:36) 
-	at org.codehaus.plexus.util.xml.pull.MXParser.nextText(MXParser.java:1339)
-	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parseDependency(MavenXpp3Reader.java:1434)
-	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parseModel(MavenXpp3Reader.java:2321)
-	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:623)
-	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:654)
-	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:93)
-	... 26 more
-
-!ENTRY org.eclipse.m2e.logback.appender 4 0 2025-09-09 19:19:59.847
-!MESSAGE Failed to read Maven project: Some problems were encountered while processing the POMs:
-[FATAL] Non-parseable POM D:\reportcard-system\backend\reportcard-backend\pom.xml: unexpected character in markup < (position: START_TAG seen ...</artifactId>\n            <version>9.1.0<<... @41:29)  @ line 41, column 29
-!STACK 0
-org.apache.maven.project.ProjectBuildingException: Some problems were encountered while processing the POMs:
-[FATAL] Non-parseable POM D:\reportcard-system\backend\reportcard-backend\pom.xml: unexpected character in markup < (position: START_TAG seen ...</artifactId>\n            <version>9.1.0<<... @41:29)  @ line 41, column 29
-
-	at org.eclipse.m2e.core.internal.IMavenToolbox.readMavenProjects(IMavenToolbox.java:140)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.lambda$22(ProjectRegistryManager.java:943)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectsWithDependencies(ProjectRegistryManager.java:939)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.create(ProjectRegistryManager.java:219)
-	at org.eclipse.m2e.core.internal.project.registry.MavenProjectManager.create(MavenProjectManager.java:105)
-	at org.eclipse.m2e.core.ui.internal.actions.SelectionUtil.getMavenProject(SelectionUtil.java:239)
-	at org.eclipse.m2e.editor.pom.MavenPomEditor.readMavenProject(MavenPomEditor.java:709)
-	at org.eclipse.m2e.editor.pom.MavenPomEditor$4.run(MavenPomEditor.java:1029)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-
-!ENTRY org.eclipse.m2e.logback.appender 4 0 2025-09-09 19:20:00.318
-!MESSAGE Could not read pom.xml
-!STACK 1
-org.eclipse.core.runtime.CoreException: Could not read pom.xml
-	at org.eclipse.m2e.core.internal.IMavenToolbox.readModel(IMavenToolbox.java:245)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refreshPhase2(ProjectRegistryManager.java:591)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:491)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:370)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:322)
-	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.getProjectFacade(MavenBuilder.java:146)
-	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.lambda$0(MavenBuilder.java:84)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
-	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.execute(MavenBuilder.java:83)
-	at org.eclipse.m2e.core.internal.builder.MavenBuilder.build(MavenBuilder.java:192)
-	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1077)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
-	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
-	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
-	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
-	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
-	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:207)
-	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:300)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-Caused by: org.apache.maven.model.io.ModelParseException: unexpected character in markup < (position: START_TAG seen ...</artifactId>\n            <version>9.1.0<<... @41:29) 
-	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:96)
-	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:74)
-	at org.eclipse.m2e.core.internal.IMavenToolbox.readModel(IMavenToolbox.java:243)
-	... 24 more
-Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: unexpected character in markup < (position: START_TAG seen ...</artifactId>\n            <version>9.1.0<<... @41:29) 
-	at org.codehaus.plexus.util.xml.pull.MXParser.nextImpl(MXParser.java:1582)
-	at org.codehaus.plexus.util.xml.pull.MXParser.next(MXParser.java:1375)
-	at org.codehaus.plexus.util.xml.pull.MXParser.nextText(MXParser.java:1331)
-	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parseDependency(MavenXpp3Reader.java:1434)
-	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parseModel(MavenXpp3Reader.java:2321)
-	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:623)
-	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:654)
-	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:93)
-	... 26 more
-!SUBENTRY 1 org.eclipse.m2e.core 4 0 2025-09-09 19:20:00.318
-!MESSAGE Could not read pom.xml
-!STACK 0
-org.apache.maven.model.io.ModelParseException: unexpected character in markup < (position: START_TAG seen ...</artifactId>\n            <version>9.1.0<<... @41:29) 
-	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:96)
-	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:74)
-	at org.eclipse.m2e.core.internal.IMavenToolbox.readModel(IMavenToolbox.java:243)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refreshPhase2(ProjectRegistryManager.java:591)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:491)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:370)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:322)
-	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.getProjectFacade(MavenBuilder.java:146)
-	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.lambda$0(MavenBuilder.java:84)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
-	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.execute(MavenBuilder.java:83)
-	at org.eclipse.m2e.core.internal.builder.MavenBuilder.build(MavenBuilder.java:192)
-	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1077)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
-	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
-	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
-	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
-	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
-	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:207)
-	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:300)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: unexpected character in markup < (position: START_TAG seen ...</artifactId>\n            <version>9.1.0<<... @41:29) 
-	at org.codehaus.plexus.util.xml.pull.MXParser.nextImpl(MXParser.java:1582)
-	at org.codehaus.plexus.util.xml.pull.MXParser.next(MXParser.java:1375)
-	at org.codehaus.plexus.util.xml.pull.MXParser.nextText(MXParser.java:1331)
-	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parseDependency(MavenXpp3Reader.java:1434)
-	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parseModel(MavenXpp3Reader.java:2321)
-	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:623)
-	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:654)
-	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:93)
-	... 26 more
-
-!ENTRY org.eclipse.m2e.logback.appender 4 0 2025-09-09 19:20:03.837
-!MESSAGE Failed to read Maven project: Some problems were encountered while processing the POMs:
-[FATAL] Non-parseable POM D:\reportcard-system\backend\reportcard-backend\pom.xml: expected name start and not \n (position: TEXT seen ...</artifactId>\n            <version>9.1.0</\n... @42:1)  @ line 42, column 1
-!STACK 0
-org.apache.maven.project.ProjectBuildingException: Some problems were encountered while processing the POMs:
-[FATAL] Non-parseable POM D:\reportcard-system\backend\reportcard-backend\pom.xml: expected name start and not \n (position: TEXT seen ...</artifactId>\n            <version>9.1.0</\n... @42:1)  @ line 42, column 1
-
-	at org.eclipse.m2e.core.internal.IMavenToolbox.readMavenProjects(IMavenToolbox.java:140)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.lambda$22(ProjectRegistryManager.java:943)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectsWithDependencies(ProjectRegistryManager.java:939)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.create(ProjectRegistryManager.java:219)
-	at org.eclipse.m2e.core.internal.project.registry.MavenProjectManager.create(MavenProjectManager.java:105)
-	at org.eclipse.m2e.core.ui.internal.actions.SelectionUtil.getMavenProject(SelectionUtil.java:239)
-	at org.eclipse.m2e.editor.pom.MavenPomEditor.readMavenProject(MavenPomEditor.java:709)
-	at org.eclipse.m2e.editor.pom.MavenPomEditor$4.run(MavenPomEditor.java:1029)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-
-!ENTRY org.eclipse.m2e.logback.appender 4 0 2025-09-09 19:20:04.421
-!MESSAGE Could not read pom.xml
-!STACK 1
-org.eclipse.core.runtime.CoreException: Could not read pom.xml
-	at org.eclipse.m2e.core.internal.IMavenToolbox.readModel(IMavenToolbox.java:245)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refreshPhase2(ProjectRegistryManager.java:591)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:491)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:370)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:322)
-	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.getProjectFacade(MavenBuilder.java:146)
-	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.lambda$0(MavenBuilder.java:84)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
-	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.execute(MavenBuilder.java:83)
-	at org.eclipse.m2e.core.internal.builder.MavenBuilder.build(MavenBuilder.java:192)
-	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1077)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
-	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
-	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
-	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
-	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
-	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:207)
-	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:300)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-Caused by: org.apache.maven.model.io.ModelParseException: expected name start and not \n (position: TEXT seen ...</artifactId>\n            <version>9.1.0</\n... @42:1) 
-	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:96)
-	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:74)
-	at org.eclipse.m2e.core.internal.IMavenToolbox.readModel(IMavenToolbox.java:243)
-	... 24 more
-Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: expected name start and not \n (position: TEXT seen ...</artifactId>\n            <version>9.1.0</\n... @42:1) 
-	at org.codehaus.plexus.util.xml.pull.MXParser.parseEndTag(MXParser.java:2125)
-	at org.codehaus.plexus.util.xml.pull.MXParser.nextImpl(MXParser.java:1418)
-	at org.codehaus.plexus.util.xml.pull.MXParser.next(MXParser.java:1375)
-	at org.codehaus.plexus.util.xml.pull.MXParser.nextText(MXParser.java:1335)
-	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parseDependency(MavenXpp3Reader.java:1434)
-	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parseModel(MavenXpp3Reader.java:2321)
-	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:623)
-	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:654)
-	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:93)
-	... 26 more
-!SUBENTRY 1 org.eclipse.m2e.core 4 0 2025-09-09 19:20:04.421
-!MESSAGE Could not read pom.xml
-!STACK 0
-org.apache.maven.model.io.ModelParseException: expected name start and not \n (position: TEXT seen ...</artifactId>\n            <version>9.1.0</\n... @42:1) 
-	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:96)
-	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:74)
-	at org.eclipse.m2e.core.internal.IMavenToolbox.readModel(IMavenToolbox.java:243)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refreshPhase2(ProjectRegistryManager.java:591)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:491)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:370)
-	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:322)
-	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.getProjectFacade(MavenBuilder.java:146)
-	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.lambda$0(MavenBuilder.java:84)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
-	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.execute(MavenBuilder.java:83)
-	at org.eclipse.m2e.core.internal.builder.MavenBuilder.build(MavenBuilder.java:192)
-	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1077)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
-	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
-	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
-	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
-	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
-	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:207)
-	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:300)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: expected name start and not \n (position: TEXT seen ...</artifactId>\n            <version>9.1.0</\n... @42:1) 
-	at org.codehaus.plexus.util.xml.pull.MXParser.parseEndTag(MXParser.java:2125)
-	at org.codehaus.plexus.util.xml.pull.MXParser.nextImpl(MXParser.java:1418)
-	at org.codehaus.plexus.util.xml.pull.MXParser.next(MXParser.java:1375)
-	at org.codehaus.plexus.util.xml.pull.MXParser.nextText(MXParser.java:1335)
-	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parseDependency(MavenXpp3Reader.java:1434)
-	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parseModel(MavenXpp3Reader.java:2321)
-	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:623)
-	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:654)
-	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:93)
-	... 26 more
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-09 19:20:08.506
-!MESSAGE The POM for mysql:mysql-connector-j:jar:9.1.0 is missing, no dependency information available
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-09 19:20:08.821
-!MESSAGE The POM for mysql:mysql-connector-j:jar:9.1.0 is missing, no dependency information available
-
-!ENTRY org.eclipse.m2e.logback.appender 4 0 2025-09-09 19:20:11.251
-!MESSAGE Could not download sources for mysql:mysql-connector-j:9.1.0
-!STACK 1
-org.eclipse.core.runtime.CoreException: Could not resolve artifact mysql:mysql-connector-j:jar:sources:9.1.0
-	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$7(MavenImpl.java:540)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:292)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
-	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:509)
-	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:494)
-	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:308)
-	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:282)
-	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:252)
-	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:220)
-	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:149)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
-	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
-	at org.eclipse.m2e.core.embedder.IMaven.execute(IMaven.java:300)
-	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:149)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-Contains: Missing mysql:mysql-connector-j:jar:sources:9.1.0
-!SUBENTRY 1 org.eclipse.m2e.core 4 -1 2025-09-09 19:20:11.251
-!MESSAGE Could not resolve artifact mysql:mysql-connector-j:jar:sources:9.1.0
-!SUBENTRY 2 org.eclipse.m2e.core 4 0 2025-09-09 19:20:11.251
-!MESSAGE Missing mysql:mysql-connector-j:jar:sources:9.1.0
-!SESSION 2025-09-09 20:16:37.109 -----------------------------------------------
-eclipse.buildId=4.36.0.20250605-1300
-java.version=21.0.6
-java.vendor=Oracle Corporation
-BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
-Framework arguments:  -product org.eclipse.epp.package.jee.product
-Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
-
-!ENTRY ch.qos.logback.classic 1 0 2025-09-09 20:16:44.884
-!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
-
-!ENTRY org.eclipse.lemminx.uber-jar 4 0 2025-09-09 20:16:45.770
-!MESSAGE bundle org.eclipse.lemminx.uber-jar:0.31.0 (1081) Component descriptor entry 'OSGI-INF/*.xml' not found
-
-!ENTRY ch.qos.logback.classic 1 0 2025-09-09 20:18:03.411
-!MESSAGE Logback config file: D:\reportcard-system\backend\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.7.100.20250418-1315.xml
-
-!ENTRY org.eclipse.ui 2 0 2025-09-09 20:18:04.442
-!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
-!SUBENTRY 1 org.eclipse.ui 2 0 2025-09-09 20:18:04.442
-!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
-
-!ENTRY org.eclipse.ui 2 0 2025-09-09 20:18:05.036
-!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
-!SUBENTRY 1 org.eclipse.ui 2 0 2025-09-09 20:18:05.037
-!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
-
-!ENTRY org.eclipse.egit.ui 2 0 2025-09-09 20:18:25.337
-!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
-user global configuration and to define the default location to store repositories: 'C:\Users\laptop'. If this is
-not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
-EGit might behave differently since they see different configuration options.
-This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
-
-!ENTRY org.eclipse.jface 2 0 2025-09-09 20:18:56.882
+!ENTRY org.eclipse.jface 2 0 2025-09-09 13:06:36.991
 !MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
-!SUBENTRY 1 org.eclipse.jface 2 0 2025-09-09 20:18:56.882
+!SUBENTRY 1 org.eclipse.jface 2 0 2025-09-09 13:06:36.992
 !MESSAGE A conflict occurred for CTRL+SHIFT+T:
 Binding(CTRL+SHIFT+T,
 	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
@@ -1911,26 +146,83 @@ Binding(CTRL+SHIFT+T,
 	org.eclipse.ui.defaultAcceleratorConfiguration,
 	org.eclipse.ui.contexts.window,,,system)
 
-!ENTRY org.eclipse.lsp4e 2 0 2025-09-09 20:28:19.009
-!MESSAGE Javadoc unavailable. Failed to obtain it.
-!STACK 0
-java.lang.InterruptedException
-	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
-	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
-	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:66)
-	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:165)
-	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:131)
-	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
-	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2025-09-09 13:54:03.331
+!MESSAGE Failed to refresh Code Minings for editor.
+!STACK 1
+Java Model Exception: Error in Java Model (code 969): reportcard-backend does not exist
+	at org.eclipse.jdt.internal.core.JavaElement.newNotPresentException(JavaElement.java:546)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getPerProjectInfoCheckExistence(JavaModelManager.java:2549)
+	at org.eclipse.jdt.internal.core.JavaProject.getPerProjectInfo(JavaProject.java:2361)
+	at org.eclipse.jdt.internal.core.JavaProject.getRawClasspath(JavaProject.java:2404)
+	at org.springframework.tooling.ls.eclipse.commons.STS4LanguageClientImpl.lambda$9(STS4LanguageClientImpl.java:439)
+	at org.springframework.tooling.jdt.ls.commons.classpath.ReusableClasspathListenerHandler$CallbackJob.lambda$0(ReusableClasspathListenerHandler.java:76)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.tooling.jdt.ls.commons.classpath.ReusableClasspathListenerHandler$CallbackJob.run(ReusableClasspathListenerHandler.java:76)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2025-09-09 13:54:03.336
+!MESSAGE reportcard-backend does not exist
 
-!ENTRY org.eclipse.lsp4e 2 0 2025-09-09 20:29:13.961
-!MESSAGE Javadoc unavailable. Failed to obtain it.
-!STACK 0
-java.lang.InterruptedException
-	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
-	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
-	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:66)
-	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:165)
-	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:131)
-	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
-	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2025-09-09 13:54:03.341
+!MESSAGE Failed to refresh Code Minings for editor.
+!STACK 1
+Java Model Exception: Error in Java Model (code 969): reportcard-backend does not exist
+	at org.eclipse.jdt.internal.core.JavaElement.newNotPresentException(JavaElement.java:546)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getPerProjectInfoCheckExistence(JavaModelManager.java:2549)
+	at org.eclipse.jdt.internal.core.JavaProject.getPerProjectInfo(JavaProject.java:2361)
+	at org.eclipse.jdt.internal.core.JavaProject.getRawClasspath(JavaProject.java:2404)
+	at org.springframework.tooling.ls.eclipse.commons.STS4LanguageClientImpl.lambda$9(STS4LanguageClientImpl.java:439)
+	at org.springframework.tooling.jdt.ls.commons.classpath.ReusableClasspathListenerHandler$CallbackJob.lambda$0(ReusableClasspathListenerHandler.java:76)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.tooling.jdt.ls.commons.classpath.ReusableClasspathListenerHandler$CallbackJob.run(ReusableClasspathListenerHandler.java:76)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2025-09-09 13:54:03.341
+!MESSAGE reportcard-backend does not exist
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2025-09-09 13:54:03.342
+!MESSAGE Failed to refresh Code Minings for editor.
+!STACK 1
+Java Model Exception: Error in Java Model (code 969): reportcard-backend does not exist
+	at org.eclipse.jdt.internal.core.JavaElement.newNotPresentException(JavaElement.java:546)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getPerProjectInfoCheckExistence(JavaModelManager.java:2549)
+	at org.eclipse.jdt.internal.core.JavaProject.getPerProjectInfo(JavaProject.java:2361)
+	at org.eclipse.jdt.internal.core.JavaProject.getRawClasspath(JavaProject.java:2404)
+	at org.springframework.tooling.ls.eclipse.commons.STS4LanguageClientImpl.lambda$9(STS4LanguageClientImpl.java:439)
+	at org.springframework.tooling.jdt.ls.commons.classpath.ReusableClasspathListenerHandler$CallbackJob.lambda$0(ReusableClasspathListenerHandler.java:76)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.tooling.jdt.ls.commons.classpath.ReusableClasspathListenerHandler$CallbackJob.run(ReusableClasspathListenerHandler.java:76)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2025-09-09 13:54:03.343
+!MESSAGE reportcard-backend does not exist
+!SESSION 2025-09-09 18:31:48.006 -----------------------------------------------
+eclipse.buildId=4.36.0.20250605-1300
+java.version=21.0.6
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY ch.qos.logback.classic 1 0 2025-09-09 18:31:58.624
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY org.eclipse.lemminx.uber-jar 4 0 2025-09-09 18:31:59.561
+!MESSAGE bundle org.eclipse.lemminx.uber-jar:0.31.0 (1081) Component descriptor entry 'OSGI-INF/*.xml' not found
+
+!ENTRY ch.qos.logback.classic 1 0 2025-09-09 18:32:15.485
+!MESSAGE Logback config file: D:\reportcard-system\backend\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.7.100.20250418-1315.xml
+
+!ENTRY org.eclipse.ui 2 0 2025-09-09 18:32:16.428
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2025-09-09 18:32:16.428
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.ui 2 0 2025-09-09 18:32:17.048
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2025-09-09 18:32:17.049
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.egit.ui 2 0 2025-09-09 18:32:28.121
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\laptop'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
