@@ -7,7 +7,7 @@
     <groupId>com.reportcard</groupId>
     <artifactId>reportcard-backend</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <packaging>war</packaging> <!-- Changed from default jar -->
+    <packaging>war</packaging>
     <name>reportcard-backend</name>
     <description>Report Card Management Backend</description>
 
@@ -59,18 +59,14 @@
     </dependencies>
 
     <build>
-    <finalName>reportcards</finalName>
-    <plugins>
-        <!-- Spring Boot Maven Plugin -->
-        <plugin>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-maven-plugin</artifactId>
-        </plugin>
-        <!-- WAR Packaging Plugin -->
-	<plugin>
-	    <groupId>org.springframework.boot</groupId>
-	    <artifactId>spring-boot-maven-plugin</artifactId>
-	</plugin>
-    </plugins>
-</build>
+        <finalName>reportcards</finalName>
+        <plugins>
+            <!-- Spring Boot Maven Plugin -->
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+
 </project>
