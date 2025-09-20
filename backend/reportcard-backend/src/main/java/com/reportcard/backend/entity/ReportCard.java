@@ -2,8 +2,6 @@ package com.reportcard.backend.entity;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
@@ -12,12 +10,8 @@ import jakarta.persistence.Table;
 public class ReportCard {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "sr_no")
-    private Integer id;
-
-    @Column(name = "student_id", nullable = false, length = 50) // NEW
-    private String studentId;
+    @Column(name = "student_id", nullable = false, length = 50)
+    private String studentId;  // Primary Key
 
     @Column(name = "student_name", nullable = false, length = 100)
     private String name;
@@ -28,24 +22,19 @@ public class ReportCard {
     @Column(name = "marks", nullable = false)
     private Integer marks;
 
-    // No-arg constructor
+    // Constructors
     public ReportCard() {}
 
-    // All-args constructor
-    public ReportCard(Integer id, String studentId, String name, String subject, Integer marks) {
-        this.id = id;
-        this.studentId = studentId; // NEW
+    public ReportCard(String studentId, String name, String subject, Integer marks) {
+        this.studentId = studentId;
         this.name = name;
         this.subject = subject;
         this.marks = marks;
     }
 
     // Getters & setters
-    public Integer getId() { return id; }
-    public void setId(Integer id) { this.id = id; }
-
-    public String getStudentId() { return studentId; } // NEW
-    public void setStudentId(String studentId) { this.studentId = studentId; } // NEW
+    public String getStudentId() { return studentId; }
+    public void setStudentId(String studentId) { this.studentId = studentId; }
 
     public String getName() { return name; }
     public void setName(String name) { this.name = name; }
@@ -58,7 +47,6 @@ public class ReportCard {
 
     @Override
     public String toString() {
-        return "ReportCard [id=" + id + ", studentId=" + studentId + ", name=" + name +
-                ", subject=" + subject + ", marks=" + marks + "]";
+        return "ReportCard [studentId=" + studentId + ", name=" + name + ", subject=" + subject + ", marks=" + marks + "]";
     }
 }

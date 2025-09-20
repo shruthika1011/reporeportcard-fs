@@ -1,7 +1,6 @@
 package com.reportcard.backend.controller;
 
 import java.util.List;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -11,68 +10,61 @@ import com.reportcard.backend.entity.ReportCard;
 import com.reportcard.backend.service.ReportCardService;
 
 @RestController
-@RequestMapping // Base path comes from Tomcat context: /reportcards
+@RequestMapping
 @CrossOrigin(origins = "http://localhost:5173")
 public class ReportCardController {
 
     @Autowired
     private ReportCardService reportCardService;
 
-    // Root Mapping: http://localhost:8080/reportcards/
     @GetMapping("/")
     public String home() {
         return "ReportCard Backend is working!";
     }
 
-    // Ping API
     @GetMapping("/reports/ping")
     public String ping() {
         return "ReportCard API is running!";
     }
 
-    // Get all reports
     @GetMapping("/all")
     public ResponseEntity<List<ReportCard>> getAllReportCards() {
         return ResponseEntity.ok(reportCardService.getAllReportCards());
     }
 
-    // Get report by ID
-    @GetMapping("/get/{id}")
-    public ResponseEntity<?> getReportCardById(@PathVariable int id) {
-        ReportCard reportCard = reportCardService.getReportCardById(id);
+    @GetMapping("/get/{studentId}")
+    public ResponseEntity<?> getReportCardByStudentId(@PathVariable String studentId) {
+        ReportCard reportCard = reportCardService.getReportCardByStudentId(studentId);
         if (reportCard != null) {
             return ResponseEntity.ok(reportCard);
         }
-        return new ResponseEntity<>("ReportCard with ID " + id + " not found.", HttpStatus.NOT_FOUND);
+        return new ResponseEntity<>("ReportCard with Student ID " + studentId + " not found.", HttpStatus.NOT_FOUND);
     }
 
-    // Add new report
     @PostMapping("/add")
     public ResponseEntity<ReportCard> addReportCard(@RequestBody ReportCard reportCard) {
         ReportCard saved = reportCardService.addReportCard(reportCard);
         return new ResponseEntity<>(saved, HttpStatus.CREATED);
     }
 
-    // Update report
-    @PutMapping("/update/{id}")
-    public ResponseEntity<?> updateReportCard(@PathVariable int id, @RequestBody ReportCard reportCard) {
-        ReportCard existing = reportCardService.getReportCardById(id);
+    @PutMapping("/update/{studentId}")
+    public ResponseEntity<?> updateReportCard(@PathVariable String studentId, @RequestBody ReportCard reportCard) {
+        ReportCard existing = reportCardService.getReportCardByStudentId(studentId);
         if (existing != null) {
-            reportCard.setId(id);
+            reportCard.setStudentId(studentId);
             ReportCard updated = reportCardService.updateReportCard(reportCard);
             return ResponseEntity.ok(updated);
         }
-        return new ResponseEntity<>("Cannot update. ReportCard with ID " + id + " not found.", HttpStatus.NOT_FOUND);
+        return new ResponseEntity<>("Cannot update. ReportCard with Student ID " + studentId + " not found.", HttpStatus.NOT_FOUND);
     }
 
-    // Delete report
-    @DeleteMapping("/delete/{id}")
-    public ResponseEntity<String> deleteReportCard(@PathVariable int id) {
-        ReportCard existing = reportCardService.getReportCardById(id);
+    @DeleteMapping("/delete/{studentId}")
+    public ResponseEntity<String> deleteReportCard(@PathVariable String studentId) {
+        ReportCard existing = reportCardService.getReportCardByStudentId(studentId);
         if (existing != null) {
-            reportCardService.deleteReportCardById(id);
-            return ResponseEntity.ok("ReportCard with ID " + id + " deleted successfully.");
+            reportCardService.deleteReportCardByStudentId(studentId);
+            return ResponseEntity.ok("ReportCard with Student ID " + studentId + " deleted successfully.");
         }
-        return new ResponseEntity<>("Cannot delete. ReportCard with ID " + id + " not found.", HttpStatus.NOT_FOUND);
+        return new ResponseEntity<>("Cannot delete. ReportCard with Student ID " + studentId + " not found.", HttpStatus.NOT_FOUND);
     }
 }

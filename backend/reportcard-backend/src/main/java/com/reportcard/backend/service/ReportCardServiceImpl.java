@@ -2,10 +2,8 @@ package com.reportcard.backend.service;
 
 import java.util.List;
 import java.util.Optional;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
 import com.reportcard.backend.entity.ReportCard;
 import com.reportcard.backend.repository.ReportCardRepository;
 
@@ -26,8 +24,8 @@ public class ReportCardServiceImpl implements ReportCardService {
     }
 
     @Override
-    public ReportCard getReportCardById(int id) {
-        Optional<ReportCard> opt = reportCardRepository.findById(id);
+    public ReportCard getReportCardByStudentId(String studentId) {
+        Optional<ReportCard> opt = reportCardRepository.findById(studentId);
         return opt.orElse(null);
     }
 
@@ -37,7 +35,7 @@ public class ReportCardServiceImpl implements ReportCardService {
     }
 
     @Override
-    public void deleteReportCardById(int id) {
-        reportCardRepository.deleteById(id);
+    public void deleteReportCardByStudentId(String studentId) {
+        reportCardRepository.deleteById(studentId);
     }
 }

@@ -6,7 +6,7 @@ import com.reportcard.backend.entity.ReportCard;
 public interface ReportCardService {
     ReportCard addReportCard(ReportCard reportCard);
     List<ReportCard> getAllReportCards();
-    ReportCard getReportCardById(int id);
+    ReportCard getReportCardByStudentId(String studentId);
     ReportCard updateReportCard(ReportCard reportCard);
-    void deleteReportCardById(int id);
+    void deleteReportCardByStudentId(String studentId);
 }

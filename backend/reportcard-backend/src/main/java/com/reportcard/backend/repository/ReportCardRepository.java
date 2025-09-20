@@ -5,7 +5,6 @@ import org.springframework.stereotype.Repository;
 import com.reportcard.backend.entity.ReportCard;
 
 @Repository
-public interface ReportCardRepository extends JpaRepository<ReportCard, Integer> {
-    // we already get CRUD methods like save, findAll, findById, deleteById
-    // but we can add custom queries later if needed
+public interface ReportCardRepository extends JpaRepository<ReportCard, String> {
+    // studentId is now the primary key, so String is used
 }
