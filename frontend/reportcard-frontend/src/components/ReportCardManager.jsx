@@ -12,7 +12,6 @@ function ReportCardManager() {
     subject: "",
     marks: ""
   });
-  const [pingStatus, setPingStatus] = useState("");
 
   useEffect(() => {
     fetchRecords();
@@ -27,20 +26,6 @@ function ReportCardManager() {
       }
     } catch (err) {
       console.error("Error fetching records:", err);
-    }
-  };
-
-  const pingBackend = async () => {
-    try {
-      const res = await fetch(`${config.backendUrl}/reports/ping`);
-      if (res.ok) {
-        const text = await res.text();
-        setPingStatus(`Backend Status: ${text}`);
-      } else {
-        setPingStatus("Backend is not responding");
-      }
-    } catch (err) {
-      setPingStatus("Backend is not reachable");
     }
   };
 
@@ -102,9 +87,6 @@ function ReportCardManager() {
   return (
     <div className="container">
       <h1>Report Card Manager</h1>
-
-      <button onClick={pingBackend}>Ping Backend</button>
-      {pingStatus && <p>{pingStatus}</p>}
 
       <form onSubmit={handleSubmit}>
         <input
