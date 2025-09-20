@@ -12,12 +12,12 @@ function ReportCardManager() {
     subject: "",
     marks: ""
   });
+  const [pingStatus, setPingStatus] = useState("");
 
   // Load records from localStorage first
   useEffect(() => {
     const localData = JSON.parse(localStorage.getItem("reportRecords")) || [];
     setRecords(localData);
-    // Try to sync with backend
     syncLocalToBackend(localData);
   }, []);
 
@@ -25,10 +25,10 @@ function ReportCardManager() {
   const syncLocalToBackend = async (localData) => {
     if (!navigator.onLine) return; // Only sync if online
 
-    const unsynced = localData.filter(r => !r.synced);
+    const unsynced = localData.filter((r) => !r.synced);
     for (let r of unsynced) {
       try {
-        const res = await fetch(config.backendUrl, {
+        const res = await fetch(`${config.backendUrl}/add`, {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({
@@ -39,6 +39,8 @@ function ReportCardManager() {
           })
         });
         if (res.ok) {
+          const saved = await res.json();
+          r.id = saved.id; // update id from backend
           r.synced = true;
         }
       } catch (err) {
@@ -52,11 +54,10 @@ function ReportCardManager() {
   // Fetch records from backend
   const fetchRecords = async () => {
     try {
-      const res = await fetch(config.backendUrl);
+      const res = await fetch(`${config.backendUrl}/all`);
       if (res.ok) {
         const data = await res.json();
-        // Mark all records as synced for localStorage
-        const syncedData = data.map(r => ({ ...r, synced: true }));
+        const syncedData = data.map((r) => ({ ...r, synced: true }));
         setRecords(syncedData);
         localStorage.setItem("reportRecords", JSON.stringify(syncedData));
       }
@@ -65,22 +66,47 @@ function ReportCardManager() {
     }
   };
 
+  // Ping backend API
+  const pingBackend = async () => {
+    try {
+      const res = await fetch(`${config.backendUrl}/reports/ping`);
+      if (res.ok) {
+        const text = await res.text();
+        setPingStatus(`Backend Status: ${text}`);
+      } else {
+        setPingStatus("Backend is not responding");
+      }
+    } catch (err) {
+      console.error("Ping error:", err);
+      setPingStatus("Backend is not reachable");
+    }
+  };
+
   const handleChange = (e) =>
     setFormData({ ...formData, [e.target.name]: e.target.value });
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    if (!formData.studentId || !formData.name || !formData.subject || formData.marks === "")
+    if (
+      !formData.studentId ||
+      !formData.name ||
+      !formData.subject ||
+      formData.marks === ""
+    )
       return;
 
     let newRecords = [...records];
 
     if (editingRecord) {
       // Update existing
-      const updated = { ...editingRecord, ...formData, marks: parseInt(formData.marks) };
+      const updated = {
+        ...editingRecord,
+        ...formData,
+        marks: parseInt(formData.marks)
+      };
       try {
         if (navigator.onLine) {
-          await fetch(`${config.backendUrl}/${updated.id}`, {
+          await fetch(`${config.backendUrl}/update/${updated.id}`, {
             method: "PUT",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(updated)
@@ -93,7 +119,7 @@ function ReportCardManager() {
         console.error("Error updating backend:", err);
         updated.synced = false;
       }
-      newRecords = newRecords.map(r => r.id === updated.id ? updated : r);
+      newRecords = newRecords.map((r) => (r.id === updated.id ? updated : r));
       setEditingRecord(null);
     } else {
       // Add new
@@ -106,7 +132,7 @@ function ReportCardManager() {
 
       if (navigator.onLine) {
         try {
-          const res = await fetch(config.backendUrl, {
+          const res = await fetch(`${config.backendUrl}/add`, {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({
@@ -136,12 +162,12 @@ function ReportCardManager() {
   };
 
   const deleteReport = async (id) => {
-    let newRecords = records.filter(r => r.id !== id);
+    let newRecords = records.filter((r) => r.id !== id);
 
-    const record = records.find(r => r.id === id);
+    const record = records.find((r) => r.id === id);
     if (record && record.synced && navigator.onLine) {
       try {
-        await fetch(`${config.backendUrl}/${id}`, { method: "DELETE" });
+        await fetch(`${config.backendUrl}/delete/${id}`, { method: "DELETE" });
       } catch (err) {
         console.error("Error deleting backend record:", err);
       }
@@ -168,6 +194,10 @@ function ReportCardManager() {
   return (
     <div className="container">
       <h1>Report Card Manager</h1>
+
+      {/* Ping backend */}
+      <button onClick={pingBackend}>Ping Backend</button>
+      {pingStatus && <p>{pingStatus}</p>}
 
       {/* Form */}
       <form onSubmit={handleSubmit}>
@@ -203,7 +233,13 @@ function ReportCardManager() {
       <table>
         <thead>
           <tr>
-            <th>ID</th><th>Student ID</th><th>Name</th><th>Subject</th><th>Marks</th><th>Actions</th>
+            <th>#</th>
+            <th>Student ID</th>
+            <th>Name</th>
+            <th>Subject</th>
+            <th>Marks</th>
+            <th>Synced</th>
+            <th>Actions</th>
           </tr>
         </thead>
         <tbody>
@@ -214,6 +250,7 @@ function ReportCardManager() {
               <td>{r.name}</td>
               <td>{r.subject}</td>
               <td>{r.marks}</td>
+              <td>{r.synced ? "Yes" : "No"}</td>
               <td>
                 <button onClick={() => editReport(r)}>Edit</button>
                 <button onClick={() => deleteReport(r.id)}>Delete</button>
