@@ -22,11 +22,6 @@ public class ReportCardController {
         return "ReportCard Backend is working!";
     }
 
-    @GetMapping("/reports/ping")
-    public String ping() {
-        return "ReportCard API is running!";
-    }
-
     @GetMapping("/all")
     public ResponseEntity<List<ReportCard>> getAllReportCards() {
         return ResponseEntity.ok(reportCardService.getAllReportCards());
