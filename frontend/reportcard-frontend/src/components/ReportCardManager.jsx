@@ -86,7 +86,7 @@ function ReportCardManager() {
 
   return (
     <div className="container">
-      <h1>Report Card Manager</h1>
+      <h1>Student Marks Manager</h1>
 
       <form onSubmit={handleSubmit}>
         <input
